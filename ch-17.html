@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCERT Class 11 Biology - Chapter 17: Locomotion and Movement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- MathJax for rendering LaTeX formulas -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                displayMath: [['$$', '$$']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bio: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d'
+                        },
+                        tealacc: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59'
+                        },
+                        amberacc: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            500: '#f59e0b',
+                            700: '#b45309'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.5;
+        }
+
+        /* Landscape Print Specifications */
+        @page {
+            size: A4 landscape;
+            margin: 8mm;
+        }
+
+        @media print {
+            body {
+                background-color: #ffffff;
+                color: #000000;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .page-break-before {
+                page-break-before: always;
+            }
+            .avoid-break {
+                page-break-inside: avoid;
+            }
+            .card-box {
+                box-shadow: none !important;
+                border: 1px solid #cbd5e1 !important;
+            }
+        }
+
+        .avoid-break {
+            break-inside: avoid;
+        }
+
+        /* Real Academic Table Gridlines */
+        table.academic-table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table.academic-table th, table.academic-table td {
+            border: 1.5px solid #0d9488;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        table.academic-table th {
+            background-color: #ccfbf1;
+            color: #0f766e;
+            font-weight: 700;
+        }
+        table.academic-table tr:nth-child(even) {
+            background-color: #f0fdfa;
+        }
+
+        .formula-box {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f0fdf4 0%, #e6fffa 100%);
+            color: #0f172a;
+            border-left: 5px solid #10b981;
+            border: 1px solid #a7f3d0;
+        }
+
+        .badge-ncert {
+            background-color: #0d9488;
+            color: #ffffff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 9999px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-6 text-slate-800">
+
+    <!-- MAIN CONTAINER (LANDSCAPE DESIGN OPTIMIZED) -->
+    <div class="max-w-[1400px] mx-auto space-y-6">
+
+        <!-- HEADER BANNER (LIGHT THEME) -->
+        <header class="bg-gradient-to-r from-emerald-100 via-teal-50 to-emerald-100 rounded-2xl p-6 shadow-sm relative overflow-hidden border-2 border-emerald-300 avoid-break">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 relative z-10">
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="bg-emerald-700 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">NCERT Complete Notes</span>
+                        <span class="bg-teal-700 text-white text-xs font-semibold px-3 py-1 rounded-full">Class 11 Biology • Unit 5</span>
+                    </div>
+                    <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-emerald-950">CHAPTER 17: LOCOMOTION AND MOVEMENT</h1>
+                    <p class="text-emerald-800 mt-1 text-sm md:text-base font-medium">Complete Textbook Coverage • NCERT Pages 217–229 • Landscape Study Guide</p>
+                </div>
+                <div class="text-right bg-white/80 backdrop-blur-md p-3 rounded-xl border border-emerald-200 shadow-xs">
+                    <p class="text-xs text-emerald-800 uppercase font-bold tracking-wider">Document Specs</p>
+                    <p class="text-sm font-semibold text-slate-800">Format: Light Landscape View</p>
+                    <p class="text-xs text-emerald-600 font-medium">Full Content & LaTeX Math Preserved</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- TABLE OF CONTENTS PILL GRID -->
+        <nav class="bg-white p-4 rounded-xl shadow-xs border border-slate-200 avoid-break">
+            <h2 class="text-xs font-extrabold text-tealacc-800 uppercase tracking-wider mb-3 flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"></path></svg>
+                Quick Navigation & Table of Contents
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 text-xs font-semibold">
+                <a href="#mindmap" class="bg-bio-50 hover:bg-bio-100 text-bio-800 p-2 rounded-lg text-center border border-bio-200 transition">🧠 Mind Map</a>
+                <a href="#sec17-1" class="bg-tealacc-50 hover:bg-tealacc-100 text-tealacc-800 p-2 rounded-lg text-center border border-tealacc-200 transition">17.1 Types of Movement</a>
+                <a href="#sec17-2" class="bg-bio-50 hover:bg-bio-100 text-bio-800 p-2 rounded-lg text-center border border-bio-200 transition">17.2 Muscle Structure</a>
+                <a href="#sec17-2-2" class="bg-tealacc-50 hover:bg-tealacc-100 text-tealacc-800 p-2 rounded-lg text-center border border-tealacc-200 transition">⚡ Contraction Mechanism</a>
+                <a href="#sec17-3" class="bg-bio-50 hover:bg-bio-100 text-bio-800 p-2 rounded-lg text-center border border-bio-200 transition">🦴 Skeletal System</a>
+                <a href="#sec17-4" class="bg-tealacc-50 hover:bg-tealacc-100 text-tealacc-800 p-2 rounded-lg text-center border border-tealacc-200 transition">🔗 Joints & Disorders</a>
+            </div>
+        </nav>
+
+        <!-- CHAPTER MIND MAP -->
+        <section id="mindmap" class="bg-white p-5 rounded-2xl shadow-xs border border-slate-200 avoid-break">
+            <div class="flex items-center gap-2 mb-4 border-b pb-2 border-slate-200">
+                <span class="text-2xl">🧠</span>
+                <h2 class="text-xl font-bold text-slate-800">Chapter Mind Map: Locomotion and Movement Hierarchy</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
+                <!-- Branch 1 -->
+                <div class="bg-bio-50 p-3 rounded-xl border-l-4 border-bio-600 border border-bio-100">
+                    <h3 class="font-bold text-bio-900 text-sm mb-1">1. Types of Movements</h3>
+                    <ul class="space-y-1 text-slate-700">
+                        <li>• <strong>Amoeboid:</strong> Macrophages, Leucocytes (Pseudopodia, Microfilaments)</li>
+                        <li>• <strong>Ciliary:</strong> Tracheal lining (dust removal), Oviducts (Ova passage)</li>
+                        <li>• <strong>Muscular:</strong> Limbs, Jaws, Tongue (Contractile properties)</li>
+                        <li>• <strong>Flagellar:</strong> Sperm, Sponges canal, <em>Euglena</em></li>
+                    </ul>
+                </div>
+                <!-- Branch 2 -->
+                <div class="bg-tealacc-50 p-3 rounded-xl border-l-4 border-tealacc-600 border border-tealacc-100">
+                    <h3 class="font-bold text-tealacc-900 text-sm mb-1">2. Muscle Types & Mechanism</h3>
+                    <ul class="space-y-1 text-slate-700">
+                        <li>• <strong>Skeletal:</strong> Striated, Voluntary, Fascicles + Fascia</li>
+                        <li>• <strong>Visceral:</strong> Smooth, Involuntary, Visceral organs</li>
+                        <li>• <strong>Cardiac:</strong> Striated, Branched, Involuntary</li>
+                        <li>• <strong>Sarcomere:</strong> Z-line, A-band, I-band, H-zone</li>
+                        <li>• <strong>Mechanism:</strong> Sliding Filament Theory ($\text{Ca}^{2+}$ + Troponin)</li>
+                    </ul>
+                </div>
+                <!-- Branch 3 -->
+                <div class="bg-bio-50 p-3 rounded-xl border-l-4 border-bio-600 border border-bio-100">
+                    <h3 class="font-bold text-bio-900 text-sm mb-1">3. Skeletal System (206 Bones)</h3>
+                    <ul class="space-y-1 text-slate-700">
+                        <li>• <strong>Axial (80):</strong> Skull (22), Hyoid (1), Ear Ossicles (6), Vertebrae (26), Sternum (1), Ribs (24)</li>
+                        <li>• <strong>Appendicular (126):</strong> Limbs ($30 \times 4 = 120$), Pectoral Girdle (4), Pelvic Girdle (2)</li>
+                    </ul>
+                </div>
+                <!-- Branch 4 -->
+                <div class="bg-amberacc-50 p-3 rounded-xl border-l-4 border-amberacc-500 border border-amberacc-100">
+                    <h3 class="font-bold text-amberacc-700 text-sm mb-1">4. Joints & Clinical Disorders</h3>
+                    <ul class="space-y-1 text-slate-700">
+                        <li>• <strong>Fibrous:</strong> Immovable (Skull sutures)</li>
+                        <li>• <strong>Cartilaginous:</strong> Slightly movable (Vertebrae)</li>
+                        <li>• <strong>Synovial:</strong> Freely movable (Ball & Socket, Hinge, Pivot, Gliding, Saddle)</li>
+                        <li>• <strong>Disorders:</strong> Myasthenia Gravis, Dystrophy, Tetany, Arthritis, Osteoporosis, Gout</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 17.1 -->
+        <section id="sec17-1" class="space-y-4">
+            <div class="flex items-center justify-between bg-emerald-100/80 border-l-4 border-emerald-600 text-emerald-950 p-3 px-5 rounded-xl shadow-xs">
+                <h2 class="text-lg font-bold flex items-center gap-2">
+                    <span class="bg-emerald-600 text-white rounded-full w-7 h-7 flex items-center justify-center font-extrabold text-sm">17</span>
+                    17.1 TYPES OF MOVEMENT
+                </h2>
+                <span class="badge-ncert">NCERT Pages 217–218</span>
+            </div>
+
+            <!-- 2-Column Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <!-- Card: Fundamental Concepts -->
+                <div class="bg-white p-4 rounded-xl shadow-xs border border-slate-200 space-y-3 avoid-break">
+                    <h3 class="font-bold text-bio-900 text-base border-b pb-1 border-bio-200">Movement vs. Locomotion</h3>
+                    <p class="text-xs text-slate-700 leading-relaxed">
+                        Movement is a primary characteristic feature of all living organisms, ranging from unicellular streaming of protoplasm in <em>Amoeba</em> to movement of cilia, flagella, tentacles, and limbs. When voluntary movements result in a change of place or location, it is termed <strong>Locomotion</strong> (e.g., walking, running, climbing, flying, swimming).
+                    </p>
+                    <div class="bg-bio-50 p-3 rounded-lg border border-bio-300 text-xs">
+                        <strong class="text-bio-900 block mb-1">🔑 Core Biological Golden Rule:</strong>
+                        <p class="italic font-semibold text-bio-800">"All locomotions are movements, but all movements are not locomotions."</p>
+                    </div>
+                    <div class="text-xs space-y-1">
+                        <strong class="text-slate-900 font-bold">Ecological Significance of Locomotion:</strong>
+                        <p class="text-slate-600">Animals locomote in search of food, shelter, mate, suitable breeding grounds, favourable climatic conditions, or to escape from predators/enemies.</p>
+                    </div>
+                </div>
+
+                <!-- Card: 3 Primary Cellular Movements -->
+                <div class="bg-white p-4 rounded-xl shadow-xs border border-slate-200 space-y-3 avoid-break">
+                    <h3 class="font-bold text-tealacc-800 text-base border-b pb-1 border-tealacc-200">Three Main Types of Body Cell Movements</h3>
+                    
+                    <div class="space-y-2 text-xs">
+                        <div class="p-2.5 bg-slate-50 rounded-lg border-l-4 border-bio-600">
+                            <strong class="text-bio-900 block font-bold">1. Amoeboid Movement:</strong>
+                            <p class="text-slate-700">Exhibited by specialized cells like <strong>macrophages</strong> and <strong>leucocytes</strong> in human blood. Effected by pseudopodia formed by protoplasmic streaming. Cytoskeletal elements like <strong>microfilaments</strong> are actively involved.</p>
+                        </div>
+
+                        <div class="p-2.5 bg-slate-50 rounded-lg border-l-4 border-tealacc-600">
+                            <strong class="text-tealacc-900 block font-bold">2. Ciliary Movement:</strong>
+                            <p class="text-slate-700">Occurs in internal tubular organs lined by ciliated epithelium. Coordinated ciliary sweeps in the <strong>trachea</strong> clear dust and foreign particles. Also facilitates passage of ova through the <strong>female reproductive tract (fallopian tubes)</strong>.</p>
+                        </div>
+
+                        <div class="p-2.5 bg-slate-50 rounded-lg border-l-4 border-amberacc-500">
+                            <strong class="text-amberacc-700 block font-bold">3. Muscular Movement:</strong>
+                            <p class="text-slate-700">Required for movements of limbs, jaws, tongue, etc. Relies on the contractile properties of muscles. Requires perfect coordination between <strong>muscular, skeletal, and neural systems</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 17.2 -->
+        <section id="sec17-2" class="space-y-4">
+            <div class="flex items-center justify-between bg-teal-100/80 border-l-4 border-teal-600 text-teal-950 p-3 px-5 rounded-xl shadow-xs">
+                <h2 class="text-lg font-bold flex items-center gap-2">
+                    <span class="bg-teal-600 text-white rounded-full w-7 h-7 flex items-center justify-center font-extrabold text-sm">17.2</span>
+                    17.2 MUSCLE: TYPES & HISTOLOGY
+                </h2>
+                <span class="badge-ncert">NCERT Pages 218–221</span>
+            </div>
+
+            <!-- Muscle General Properties -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-3 text-xs avoid-break">
+                <div class="bg-white p-3 rounded-xl border border-bio-200 text-center shadow-xs">
+                    <span class="text-bio-700 font-bold block text-sm">Origin</span>
+                    <span class="text-slate-700">Mesodermal origin</span>
+                </div>
+                <div class="bg-white p-3 rounded-xl border border-bio-200 text-center shadow-xs">
+                    <span class="text-bio-700 font-bold block text-sm">Body Mass Share</span>
+                    <span class="text-slate-700">$40\% - 50\%$ of adult body weight</span>
+                </div>
+                <div class="bg-white p-3 rounded-xl border border-bio-200 text-center shadow-xs">
+                    <span class="text-bio-700 font-bold block text-sm">Core Functional Properties</span>
+                    <span class="text-slate-700">Excitability, Contractility, Extensibility, Elasticity</span>
+                </div>
+                <div class="bg-white p-3 rounded-xl border border-bio-200 text-center shadow-xs">
+                    <span class="text-bio-700 font-bold block text-sm">Flagellar Outgrowths</span>
+                    <span class="text-slate-700">Spermatozoa swimming, Sponges canal, <em>Euglena</em></span>
+                </div>
+            </div>
+
+            <!-- Detailed Comparison Table of Muscle Types -->
+            <div class="bg-white p-4 rounded-xl shadow-xs border border-slate-200 avoid-break">
+                <h3 class="font-bold text-bio-900 text-sm mb-3">Comprehensive Comparison Table: Three Types of Muscle Tissues</h3>
+                <table class="academic-table text-xs">
+                    <thead>
+                        <tr>
+                            <th>Property / Feature</th>
+                            <th>Skeletal Muscle</th>
+                            <th>Visceral (Smooth) Muscle</th>
+                            <th>Cardiac Muscle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-bold">Location</td>
+                            <td>Attached closely to skeletal bones</td>
+                            <td>Inner walls of hollow visceral organs (digestive & genital tracts)</td>
+                            <td>Wall of Heart (Myocardium)</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Microscopic Appearance</td>
+                            <td>Striated (Alternate dark A & light I bands)</td>
+                            <td>Non-striated (Smooth appearance, fusiform)</td>
+                            <td>Striated with intercalated discs</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Nervous Control</td>
+                            <td>Voluntary (Under conscious somatic nervous control)</td>
+                            <td>Involuntary (Autonomic nervous control)</td>
+                            <td>Involuntary (Autonomic nervous system influence)</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Cellular Structure</td>
+                            <td>Multinucleated Syncytium with Sarcolemma</td>
+                            <td>Uninucleate, spindle-shaped cells</td>
+                            <td>Branched cellular network with intercalated discs</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Primary Functions</td>
+                            <td>Locomotion, body posture changes</td>
+                            <td>Peristalsis, food & gamete transport</td>
+                            <td>Rhythmic contraction pumping blood throughout life</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Anatomy of Skeletal Muscle & Diagram -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <!-- Explanation Card -->
+                <div class="bg-white p-4 rounded-xl shadow-xs border border-slate-200 space-y-3 text-xs avoid-break">
+                    <h3 class="font-bold text-bio-900 text-base border-b pb-1 border-bio-200">Detailed Anatomy of a Skeletal Muscle Bundle</h3>
+                    <ul class="space-y-2 text-slate-700">
+                        <li>• <strong>Fascicles:</strong> Each skeletal muscle is composed of multiple muscle bundles called <em>fascicles</em>.</li>
+                        <li>• <strong>Fascia:</strong> Fascicles are held together by a common collagenous connective tissue layer named <em>fascia</em>.</li>
+                        <li>• <strong>Muscle Fibre (Cell):</strong> Each fascicle contains numerous muscle fibres. The cell membrane is the <strong>Sarcolemma</strong>, enclosing <strong>Sarcoplasm</strong>.</li>
+                        <li>• <strong>Syncytium:</strong> Muscle fibre is a syncytium because sarcoplasm contains multiple nuclei.</li>
+                        <li>• <strong>Sarcoplasmic Reticulum:</strong> Specialized endoplasmic reticulum acting as the primary storehouse of Calcium ions ($\text{Ca}^{2+}$).</li>
+                        <li>• <strong>Myofibrils / Myofilaments:</strong> Parallelly arranged filaments in sarcoplasm exhibiting alternate dark (<strong>A-band</strong>) and light (<strong>I-band</strong>).</li>
+                    </ul>
+                </div>
+
+                <!-- Custom SVG Visual Diagram: Muscle Cross Section -->
+                <div class="bg-bio-50 p-4 rounded-xl shadow-xs border border-bio-200 flex flex-col items-center justify-center avoid-break">
+                    <span class="text-xs font-bold text-bio-800 mb-2">Figure 17.1 — Cross-Sectional View of Muscle & Fascicles</span>
+                    <svg viewBox="0 0 400 220" class="w-full max-w-sm h-auto bg-white rounded-lg border border-bio-300 p-2">
+                        <!-- Outer Muscle Sheath / Fascia -->
+                        <path d="M 30,110 C 30,30 180,20 220,20 C 260,20 370,50 370,110 C 370,170 260,200 220,200 C 180,200 30,190 30,110 Z" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+                        
+                        <!-- Fascicle Bundles -->
+                        <circle cx="100" cy="80" r="35" fill="#fca5a5" stroke="#b91c1c" stroke-width="2"/>
+                        <circle cx="100" cy="150" r="35" fill="#fca5a5" stroke="#b91c1c" stroke-width="2"/>
+                        <circle cx="200" cy="70" r="40" fill="#fca5a5" stroke="#b91c1c" stroke-width="2"/>
+                        <circle cx="200" cy="155" r="35" fill="#fca5a5" stroke="#b91c1c" stroke-width="2"/>
+
+                        <!-- Muscle Fibres inside Fascicle -->
+                        <circle cx="90" cy="75" r="6" fill="#991b1b"/>
+                        <circle cx="110" cy="75" r="6" fill="#991b1b"/>
+                        <circle cx="100" cy="90" r="6" fill="#991b1b"/>
+                        <circle cx="190" cy="65" r="7" fill="#991b1b"/>
+                        <circle cx="210" cy="65" r="7" fill="#991b1b"/>
+
+                        <!-- Blood Vessels -->
+                        <circle cx="150" cy="110" r="10" fill="#ef4444"/>
+                        <circle cx="150" cy="110" r="5" fill="#991b1b"/>
+
+                        <!-- Labels & Text -->
+                        <text x="40" y="45" font-size="10" font-weight="bold" fill="#7f1d1d">Fascia (Connective tissue)</text>
+                        <text x="250" y="70" font-size="10" font-weight="bold" fill="#991b1b">Fascicle (Muscle Bundle)</text>
+                        <text x="250" y="150" font-size="10" font-weight="bold" fill="#7f1d1d">Muscle Fibre (Cell)</text>
+                        <text x="140" y="130" font-size="9" font-weight="bold" fill="#ef4444">Blood Capillary</text>
+                    </svg>
+                </div>
+
+            </div>
+
+            <!-- Sarcomere Structure Details & Diagram -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <!-- SVG Diagram: Sarcomere Anatomy -->
+                <div class="bg-tealacc-50 p-4 rounded-xl shadow-xs border border-tealacc-200 flex flex-col items-center justify-center avoid-break">
+                    <span class="text-xs font-bold text-tealacc-800 mb-2">Figure 17.2 — Detailed Anatomy of Sarcomere</span>
+                    <svg viewBox="0 0 500 220" class="w-full h-auto bg-white rounded-lg border border-tealacc-300 p-2">
+                        <!-- Z Lines -->
+                        <line x1="60" y1="20" x2="60" y2="200" stroke="#15803d" stroke-width="5" stroke-dasharray="4"/>
+                        <line x1="440" y1="20" x2="440" y2="200" stroke="#15803d" stroke-width="5" stroke-dasharray="4"/>
+                        
+                        <!-- M Line -->
+                        <line x1="250" y1="30" x2="250" y2="190" stroke="#b91c1c" stroke-width="2" stroke-dasharray="2"/>
+
+                        <!-- Thick Filaments (Myosin) -->
+                        <line x1="150" y1="70" x2="350" y2="70" stroke="#b91c1c" stroke-width="8"/>
+                        <line x1="150" y1="110" x2="350" y2="110" stroke="#b91c1c" stroke-width="8"/>
+                        <line x1="150" y1="150" x2="350" y2="150" stroke="#b91c1c" stroke-width="8"/>
+
+                        <!-- Thin Filaments (Actin) attached to Z lines -->
+                        <line x1="60" y1="50" x2="200" y2="50" stroke="#0284c7" stroke-width="4"/>
+                        <line x1="60" y1="90" x2="200" y2="90" stroke="#0284c7" stroke-width="4"/>
+                        <line x1="60" y1="130" x2="200" y2="130" stroke="#0284c7" stroke-width="4"/>
+                        <line x1="60" y1="170" x2="200" y2="170" stroke="#0284c7" stroke-width="4"/>
+
+                        <line x1="440" y1="50" x2="300" y2="50" stroke="#0284c7" stroke-width="4"/>
+                        <line x1="440" y1="90" x2="300" y2="90" stroke="#0284c7" stroke-width="4"/>
+                        <line x1="440" y1="130" x2="300" y2="130" stroke="#0284c7" stroke-width="4"/>
+                        <line x1="440" y1="170" x2="300" y2="170" stroke="#0284c7" stroke-width="4"/>
+
+                        <!-- Dimension Markers -->
+                        <!-- Sarcomere -->
+                        <line x1="60" y1="205" x2="440" y2="205" stroke="#1e293b" stroke-width="1.5"/>
+                        <text x="220" y="217" font-size="11" font-weight="bold" fill="#0f172a">SARCOMERE</text>
+                        
+                        <!-- H Zone -->
+                        <line x1="200" y1="35" x2="300" y2="35" stroke="#d97706" stroke-width="1.5"/>
+                        <text x="235" y="30" font-size="10" font-weight="bold" fill="#b45309">H-Zone</text>
+
+                        <!-- Labels -->
+                        <text x="45" y="15" font-size="10" font-weight="bold" fill="#15803d">Z-Line</text>
+                        <text x="425" y="15" font-size="10" font-weight="bold" fill="#15803d">Z-Line</text>
+                        <text x="235" y="15" font-size="10" font-weight="bold" fill="#b91c1c">M-Line</text>
+                    </svg>
+                </div>
+
+                <!-- Explanation Box & Formulas -->
+                <div class="bg-white p-4 rounded-xl shadow-xs border border-slate-200 text-xs space-y-3 avoid-break">
+                    <h3 class="font-bold text-bio-900 text-base border-b pb-1 border-bio-200">Sarcomere Functional Regions & Formulas</h3>
+                    
+                    <div class="space-y-1.5 text-slate-700">
+                        <p>• <strong>I-Band (Isotropic Band):</strong> Light band containing only <strong>Actin (thin) filaments</strong>. Bisected by elastic fibre called the <strong>Z-line</strong>.</p>
+                        <p>• <strong>A-Band (Anisotropic Band):</strong> Dark band containing <strong>Myosin (thick) filaments</strong> along with overlapping thin filaments. Held in middle by thin fibrous <strong>M-line</strong>.</p>
+                        <p>• <strong>H-Zone:</strong> Central part of thick filament <em>not overlapped</em> by thin filaments in resting state.</p>
+                        <p>• <strong>Sarcomere Definition:</strong> The portion of myofibril between two successive Z-lines; considered the functional unit of contraction.</p>
+                    </div>
+
+                    <div class="formula-box p-3 rounded-xl space-y-2 text-xs">
+                        <p class="text-emerald-900 font-bold flex items-center gap-1.5">
+                            <span class="text-emerald-600">📐</span> Sarcomere Structural Mathematical Formula:
+                        </p>
+                        <div class="text-slate-800 space-y-1">
+                            $$1 \text{ Sarcomere} = \frac{1}{2} (\text{I-Band}) + 1 \text{ Full A-Band} + \frac{1}{2} (\text{I-Band})$$
+                            $$\text{Resting H-Zone} = \text{Length of A-Band} - \text{Overlapping Thin Filaments}$$
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Subsection 17.2.1: Contractile Proteins -->
+            <div class="bg-white p-4 rounded-xl shadow-xs border border-slate-200 space-y-4 avoid-break">
+                <h3 class="font-bold text-bio-900 text-base border-b pb-1 border-bio-200">17.2.1 Structure of Contractile Proteins (Actin & Myosin)</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                    <!-- Thin Filament (Actin) Structure -->
+                    <div class="p-3 bg-bio-50 rounded-xl border border-bio-200 space-y-2">
+                        <h4 class="font-bold text-bio-900 text-sm flex items-center gap-1">
+                            <span class="w-2.5 h-2.5 bg-sky-500 rounded-full"></span> Thin Filament (Actin) Components
+                        </h4>
+                        <ul class="space-y-1.5 text-slate-700">
+                            <li>• <strong>F-Actin (Filamentous):</strong> Two 'F' actins helically wound together. Each F-actin is a polymer of monomeric <strong>'G' (Globular) actins</strong>.</li>
+                            <li>• <strong>Tropomyosin:</strong> Two filaments of tropomyosin run close to F-actins throughout its length.</li>
+                            <li>• <strong>Troponin:</strong> Complex protein distributed at regular intervals on tropomyosin. In resting state, a subunit of troponin <strong>masks active binding sites for myosin</strong> on actin filaments.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Thick Filament (Myosin) Structure -->
+                    <div class="p-3 bg-tealacc-50 rounded-xl border border-tealacc-200 space-y-2">
+                        <h4 class="font-bold text-tealacc-900 text-sm flex items-center gap-1">
+                            <span class="w-2.5 h-2.5 bg-red-600 rounded-full"></span> Thick Filament (Myosin) Components
+                        </h4>
+                        <ul class="space-y-1.5 text-slate-700">
+                            <li>• <strong>Meromyosins:</strong> Myosin is a polymerised protein made of monomeric units called Meromyosins.</li>
+                            <li>• <strong>Heavy Meromyosin (HMM):</strong> Consists of Globular Head + Short Arm (forms <strong>Cross Arm</strong> projecting outwards).</li>
+                            <li>• <strong>Light Meromyosin (LMM):</strong> Constitutes the Tail portion.</li>
+                            <li>• <strong>Active ATPase Head:</strong> Globular head has active <strong>ATPase enzyme sites</strong>, ATP binding sites, and active sites for actin.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUBSECTION 17.2.2: MECHANISM OF CONTRACTION -->
+        <section id="sec17-2-2" class="space-y-4">
+            <div class="flex items-center justify-between bg-emerald-100/80 border-l-4 border-emerald-600 text-emerald-950 p-3 px-5 rounded-xl shadow-xs">
+                <h2 class="text-lg font-bold flex items-center gap-2">
+                    <span class="bg-amber-500 text-white rounded-full w-7 h-7 flex items-center justify-center font-extrabold text-sm">⚡</span>
+                    17.2.2 MECHANISM OF MUSCLE CONTRACTION (SLIDING FILAMENT THEORY)
+                </h2>
+                <span class="badge-ncert">NCERT Pages 221–223</span>
+            </div>
+
+            <!-- Biochemical Step-by-Step Pathway Card -->
+            <div class="bg-white p-4 rounded-xl shadow-xs border border-slate-200 space-y-3 text-xs avoid-break">
+                <h3 class="font-bold text-bio-900 text-sm border-b pb-1 border-bio-200">Sequential Biochemical & Biophysical Steps in Muscle Contraction</h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2 text-slate-700 font-medium">
+                    <div class="p-2.5 bg-bio-50 rounded-lg border border-bio-300">
+                        <span class="bg-bio-700 text-white rounded-full w-5 h-5 inline-flex items-center justify-center text-[10px] font-bold mb-1">1</span>
+                        <p class="font-bold text-bio-900 mb-1">CNS Neural Signal</p>
+                        <p class="text-[11px]">Signal sent via motor neuron to <strong>Neuromuscular Junction (Motor-end plate)</strong>. Releases <strong>Acetylcholine (ACh)</strong>.</p>
+                    </div>
+
+                    <div class="p-2.5 bg-bio-50 rounded-lg border border-bio-300">
+                        <span class="bg-bio-700 text-white rounded-full w-5 h-5 inline-flex items-center justify-center text-[10px] font-bold mb-1">2</span>
+                        <p class="font-bold text-bio-900 mb-1">Action Potential & $\text{Ca}^{2+}$</p>
+                        <p class="text-[11px]">Action potential spreads through sarcolemma. Causes release of <strong>$\text{Ca}^{2+}$ ions</strong> from sarcoplasmic reticulum into sarcoplasm.</p>
+                    </div>
+
+                    <div class="p-2.5 bg-bio-50 rounded-lg border border-bio-300">
+                        <span class="bg-bio-700 text-white rounded-full w-5 h-5 inline-flex items-center justify-center text-[10px] font-bold mb-1">3</span>
+                        <p class="font-bold text-bio-900 mb-1">Unmasking Active Sites</p>
+                        <p class="text-[11px]">$\text{Ca}^{2+}$ binds subunit of <strong>Troponin</strong>, removing masking from active myosin binding sites on actin filaments.</p>
+                    </div>
+
+                    <div class="p-2.5 bg-bio-50 rounded-lg border border-bio-300">
+                        <span class="bg-bio-700 text-white rounded-full w-5 h-5 inline-flex items-center justify-center text-[10px] font-bold mb-1">4</span>
+                        <p class="font-bold text-bio-900 mb-1">Cross Bridge Power Stroke</p>
+                        <p class="text-[11px]">Myosin head hydrolyses ATP ($\text{ADP} + \text{P}_i$), binds actin to form <strong>Cross Bridge</strong>, pulling Z-lines inward toward center of A-band.</p>
+                    </div>
+
+                    <div class="p-2.5 bg-bio-50 rounded-lg border border-bio-300">
+                        <span class="bg-bio-700 text-white rounded-full w-5 h-5 inline-flex items-center justify-center text-[10px] font-bold mb-1">5</span>
+                        <p class="font-bold text-bio-900 mb-1">Relaxation Phase</p>
+                        <p class="text-[11px]">New ATP binds, cross-bridge breaks. $\text{Ca}^{2+}$ pumped back to sarcoplasmic cisternae. Troponin re-masks actin sites.</p>
+                    </div>
+                </div>
+
+                <!-- Equations & Formulas Box (Clean Light Styling with Correct LaTeX) -->
+                <div class="formula-box p-4 rounded-xl space-y-3 text-xs">
+                    <p class="text-emerald-900 font-bold text-sm flex items-center gap-2 border-b border-emerald-200 pb-2">
+                        <span>🧪</span> Key Biochemical Equations of Contraction & Fatigue:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-800">
+                        <div class="bg-white p-3 rounded-lg border border-emerald-200 shadow-xs">
+                            <p class="text-xs font-bold text-emerald-800 mb-1">1. ATP Hydrolysis by Myosin Head:</p>
+                            <p class="py-1">
+                                $$\text{ATP} + \text{H}_2\text{O} \xrightarrow{\text{Myosin ATPase}} \text{ADP} + \text{P}_i + \text{Energy (Power Stroke)}$$
+                            </p>
+                        </div>
+                        <div class="bg-white p-3 rounded-lg border border-emerald-200 shadow-xs">
+                            <p class="text-xs font-bold text-emerald-800 mb-1">2. Anaerobic Glycogen Breakdown (Muscle Fatigue):</p>
+                            <p class="py-1">
+                                $$\text{Muscle Glycogen} \xrightarrow{\text{Anaerobic Glycolysis}} \text{Lactic Acid Accumulation} \implies \text{Muscle Fatigue}$$
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Changes during Contraction & Red vs White Muscle Table -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <!-- Structural Changes Card -->
+                <div class="bg-white p-4 rounded-xl shadow-xs border border-slate-200 text-xs space-y-2 avoid-break">
+                    <h3 class="font-bold text-bio-900 text-sm border-b pb-1 border-bio-200">Structural Band Alterations During Contraction</h3>
+                    <ul class="space-y-1.5 text-slate-700">
+                        <li class="p-1.5 bg-emerald-50 rounded border border-emerald-200">✅ <strong>I-Band:</strong> Gets <em>reduced/shortened</em> as thin filaments slide inwards.</li>
+                        <li class="p-1.5 bg-emerald-50 rounded border border-emerald-200">✅ <strong>H-Zone:</strong> Reduces and completely <em>disappears</em> upon maximal contraction.</li>
+                        <li class="p-1.5 bg-emerald-50 rounded border border-emerald-200">✅ <strong>Sarcomere:</strong> Overall length <em>shortens</em> (Z-lines pulled together).</li>
+                        <li class="p-1.5 bg-amber-50 rounded border border-amber-200 text-amber-900">⚠️ <strong>A-Band:</strong> <strong>RETAINS ITS ORIGINAL LENGTH</strong> (Does not shorten!).</li>
+                    </ul>
+                </div>
+
+                <!-- Comparison Table: Red vs White Muscle Fibres -->
+                <div class="bg-white p-4 rounded-xl shadow-xs border border-slate-200 text-xs avoid-break">
+                    <h3 class="font-bold text-tealacc-900 text-sm mb-2">Comparison: Red Muscle Fibres vs. White Muscle Fibres</h3>
+                    <table class="academic-table text-xs">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Red Fibres (Aerobic)</th>
+                                <th>White Fibres (Anaerobic)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-bold">Myoglobin Content</td>
+                                <td>Very High (Reddish appearance)</td>
+                                <td>Very Low (Pale or whitish appearance)</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold">Mitochondria</td>
+                                <td>Plenty (Utilises $\text{O}_2$ for ATP)</td>
+                                <td>Few in number</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold">Sarcoplasmic Reticulum</td>
+                                <td>Moderate amount</td>
+                                <td>Very High amount</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold">Metabolism</td>
+                                <td>Aerobic process (Fatigue resistant)</td>
+                                <td>Anaerobic process (Fatigues rapidly)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 17.3 -->
+        <section id="sec17-3" class="space-y-4">
+            <div class="flex items-center justify-between bg-emerald-100/80 border-l-4 border-emerald-600 text-emerald-950 p-3 px-5 rounded-xl shadow-xs">
+                <h2 class="text-lg font-bold flex items-center gap-2">
+                    <span class="bg-emerald-600 text-white rounded-full w-7 h-7 flex items-center justify-center font-extrabold text-sm">17.3</span>
+                    17.3 SKELETAL SYSTEM (206 BONES)
+                </h2>
+                <span class="badge-ncert">NCERT Pages 224–226</span>
+            </div>
+
+            <!-- Connective Tissue Matrix Comparison -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs avoid-break">
+                <div class="p-3 bg-white rounded-xl border border-bio-200 shadow-xs space-y-1">
+                    <strong class="text-bio-900 text-sm block font-bold">Bone (Hard Connective Tissue)</strong>
+                    <p class="text-slate-700">Has a very hard, non-pliable matrix due to high concentration of <strong>Calcium salts</strong> (Calcium phosphate & carbonate).</p>
+                </div>
+                <div class="p-3 bg-white rounded-xl border border-tealacc-200 shadow-xs space-y-1">
+                    <strong class="text-tealacc-900 text-sm block font-bold">Cartilage (Pliable Connective Tissue)</strong>
+                    <p class="text-slate-700">Has a slightly pliable matrix due to <strong>Chondroitin salts</strong>.</p>
+                </div>
+            </div>
+
+            <!-- Master Skeletal Division Equation Box -->
+            <div class="formula-box p-4 rounded-xl space-y-2 text-xs avoid-break">
+                <p class="text-emerald-900 font-bold text-sm">🦴 Total Human Skeleton Calculation Formula:</p>
+                <div class="text-slate-800">
+                    $$\text{Total Human Bones } (206) = \text{Axial Skeleton } (80) + \text{Appendicular Skeleton } (126)$$
+                </div>
+            </div>
+
+            <!-- PART 1: AXIAL SKELETON (80 BONES) -->
+            <div class="bg-white p-4 rounded-xl shadow-xs border border-slate-200 space-y-4 avoid-break">
+                <div class="flex items-center justify-between border-b pb-2 border-slate-200">
+                    <h3 class="font-bold text-bio-900 text-base">A. Axial Skeleton Breakdown (80 Bones)</h3>
+                    <span class="text-xs font-bold text-bio-700 bg-bio-50 px-3 py-1 rounded-full border border-bio-200">Distributed along central body axis</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-3 text-xs">
+                    <!-- Skull -->
+                    <div class="p-3 bg-bio-50 rounded-xl border border-bio-200 space-y-1.5">
+                        <strong class="text-bio-900 font-bold block">1. Skull (22 Bones)</strong>
+                        <p class="text-slate-700">• <strong>Cranial (8):</strong> Frontal, Parietal (2), Temporal (2), Occipital, Sphenoid, Ethmoid.</p>
+                        <p class="text-slate-700">• <strong>Facial (14):</strong> Form front skull part (Nasal, Maxilla, Zygomatic, Mandible, etc.).</p>
+                        <p class="text-slate-700">• <strong>Dicondylic Skull:</strong> Articulates with atlas vertebra via 2 Occipital Condyles.</p>
+                    </div>
+
+                    <!-- Associated Head Bones -->
+                    <div class="p-3 bg-tealacc-50 rounded-xl border border-tealacc-200 space-y-1.5">
+                        <strong class="text-tealacc-900 font-bold block">2. Hyoid & Ear Ossicles (7 Bones)</strong>
+                        <p class="text-slate-700">• <strong>Hyoid Bone (1):</strong> Single U-shaped bone present at base of buccal cavity.</p>
+                        <p class="text-slate-700">• <strong>Ear Ossicles ($6 = 3 \times 2$):</strong> Malleus, Incus, Stapes in middle ears.</p>
+                    </div>
+
+                    <!-- Vertebral Column -->
+                    <div class="p-3 bg-bio-50 rounded-xl border border-bio-200 space-y-1.5">
+                        <strong class="text-bio-900 font-bold block">3. Vertebral Column (26 Units)</strong>
+                        <p class="text-slate-700">• <strong>Cervical (7):</strong> Neck region ($\text{C}_1 - \text{C}_7$). $\text{C}_1 = \text{Atlas}$.</p>
+                        <p class="text-slate-700">• <strong>Thoracic (12):</strong> $\text{T}_1 - \text{T}_{12}$.</p>
+                        <p class="text-slate-700">• <strong>Lumbar (5):</strong> $\text{L}_1 - \text{L}_5$.</p>
+                        <p class="text-slate-700">• <strong>Sacral (1 fused):</strong> 5 fused into 1.</p>
+                        <p class="text-slate-700">• <strong>Coccygeal (1 fused):</strong> 4 fused into 1.</p>
+                    </div>
+
+                    <!-- Rib Cage & Sternum -->
+                    <div class="p-3 bg-amberacc-50 rounded-xl border border-amberacc-200 space-y-1.5">
+                        <strong class="text-amberacc-700 font-bold block">4. Sternum & Ribs (25 Bones)</strong>
+                        <p class="text-slate-700">• <strong>Sternum (1):</strong> Flat bone on ventral midline of thorax.</p>
+                        <p class="text-slate-700">• <strong>True Ribs (Pairs 1–7):</strong> Dorsally attached to thoracic vertebrae, ventrally to sternum via hyaline cartilage.</p>
+                        <p class="text-slate-700">• <strong>False Ribs (Pairs 8–10):</strong> Vertebrochondral ribs; join 7th rib via hyaline cartilage.</p>
+                        <p class="text-slate-700">• <strong>Floating Ribs (Pairs 11–12):</strong> Not connected ventrally.</p>
+                    </div>
+                </div>
+
+                <!-- Mnemonic Card -->
+                <div class="p-3 bg-amberacc-100 rounded-xl border border-amberacc-300 text-xs text-amberacc-800 flex items-center gap-3">
+                    <span class="text-2xl">🧠</span>
+                    <div>
+                        <strong>Memory Trick for Cranial Bones (8 Bones):</strong> Use mnemonic <strong class="text-amber-900 font-mono">"PEST OF"</strong>
+                        <p class="text-[11px] text-slate-700"><strong>P</strong>arietal (2), <strong>E</strong>thmoid (1), <strong>S</strong>phenoid (1), <strong>T</strong>emporal (2), <strong>O</strong>ccipital (1), <strong>F</strong>rontal (1) = 8 Bones total.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PART 2: APPENDICULAR SKELETON (126 BONES) -->
+            <div class="bg-white p-4 rounded-xl shadow-xs border border-slate-200 space-y-4 avoid-break">
+                <div class="flex items-center justify-between border-b pb-2 border-slate-200">
+                    <h3 class="font-bold text-tealacc-900 text-base">B. Appendicular Skeleton Breakdown (126 Bones)</h3>
+                    <span class="text-xs font-bold text-tealacc-700 bg-tealacc-50 px-3 py-1 rounded-full border border-tealacc-200">Limbs & Girdles</span>
+                </div>
+
+                <!-- 2-Column Grid for Upper & Lower Limbs -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                    
+                    <!-- Forelimb & Pectoral Girdle -->
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-300 space-y-2">
+                        <h4 class="font-bold text-bio-900 text-sm">Forelimbs (60 Bones) & Pectoral Girdle (4 Bones)</h4>
+                        <ul class="space-y-1 text-slate-700">
+                            <li>• <strong>Humerus:</strong> 1 per arm (Upper arm bone)</li>
+                            <li>• <strong>Radius & Ulna:</strong> 2 per arm (Forearm)</li>
+                            <li>• <strong>Carpals (Wrist):</strong> 8 per arm</li>
+                            <li>• <strong>Metacarpals (Palm):</strong> 5 per arm</li>
+                            <li>• <strong>Phalanges (Digits):</strong> 14 per arm (Formula: $2, 3, 3, 3, 3$)</li>
+                            <li class="border-t pt-1 font-semibold text-bio-800">• <strong>Pectoral Girdle (2 halves = 4 bones):</strong> Each half consists of 1 <strong>Clavicle</strong> (collar bone with 2 curvatures) and 1 <strong>Scapula</strong> (flat triangular bone with spine, acromion process, and <strong>Glenoid Cavity</strong> articulating with humerus head).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Hindlimb & Pelvic Girdle -->
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-300 space-y-2">
+                        <h4 class="font-bold text-tealacc-900 text-sm">Hindlimbs (60 Bones) & Pelvic Girdle (2 Bones)</h4>
+                        <ul class="space-y-1 text-slate-700">
+                            <li>• <strong>Femur (Thigh):</strong> 1 per leg (Longest bone of body)</li>
+                            <li>• <strong>Patella (Knee cap):</strong> 1 per leg (Cup-shaped ventral knee cover)</li>
+                            <li>• <strong>Tibia & Fibula:</strong> 2 per leg (Shank bones)</li>
+                            <li>• <strong>Tarsals (Ankle):</strong> 7 per leg</li>
+                            <li>• <strong>Metatarsals:</strong> 5 per leg</li>
+                            <li>• <strong>Phalanges (Digits):</strong> 14 per leg</li>
+                            <li class="border-t pt-1 font-semibold text-tealacc-800">• <strong>Pelvic Girdle (2 Coxal bones):</strong> Formed by fusion of <strong>Ilium, Ischium, and Pubis</strong>. Features deep <strong>Acetabulum cavity</strong> for femur head. Joined ventrally by <strong>Pubic Symphysis</strong> (fibrous cartilage).</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 17.4 & 17.5 -->
+        <section id="sec17-4" class="space-y-4">
+            <div class="flex items-center justify-between bg-teal-100/80 border-l-4 border-teal-600 text-teal-950 p-3 px-5 rounded-xl shadow-xs">
+                <h2 class="text-lg font-bold flex items-center gap-2">
+                    <span class="bg-teal-600 text-white rounded-full w-7 h-7 flex items-center justify-center font-extrabold text-sm">17.4</span>
+                    17.4 JOINTS & 17.5 DISORDERS OF MUSCULAR & SKELETAL SYSTEM
+                </h2>
+                <span class="badge-ncert">NCERT Pages 226–227</span>
+            </div>
+
+            <!-- SECTION 17.4: JOINTS -->
+            <div class="bg-white p-4 rounded-xl shadow-xs border border-slate-200 space-y-4 avoid-break">
+                <h3 class="font-bold text-bio-900 text-base border-b pb-1 border-bio-200">17.4 Classification of Joints</h3>
+                <p class="text-xs text-slate-700">Joints are points of contact between bones, or between bones and cartilages. Force generated by muscles is used to carry out movement through joints, where the joint acts as a <strong>fulcrum</strong>.</p>
+
+                <!-- Academic Grid Table for Joints -->
+                <table class="academic-table text-xs">
+                    <thead>
+                        <tr>
+                            <th>Joint Category</th>
+                            <th>Structural Feature</th>
+                            <th>Degree of Movement</th>
+                            <th>Textbook Examples</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-bold text-bio-900">1. Fibrous Joints</td>
+                            <td>Bones fused end-to-end with dense fibrous connective tissue</td>
+                            <td>No movement (Immovable)</td>
+                            <td>Sutures of flat skull bones forming cranium</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold text-bio-900">2. Cartilaginous Joints</td>
+                            <td>Bones joined together with the help of cartilages</td>
+                            <td>Permits limited movements</td>
+                            <td>Joints between adjacent vertebrae in vertebral column</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold text-bio-900">3. Synovial Joints</td>
+                            <td>Fluid-filled synovial cavity between articulating surfaces</td>
+                            <td>Considerable movement (Freely movable)</td>
+                            <td>
+                                • <strong>Ball & Socket:</strong> Humerus & Pectoral girdle<br>
+                                • <strong>Hinge Joint:</strong> Knee & Elbow joint<br>
+                                • <strong>Pivot Joint:</strong> Between Atlas ($\text{C}_1$) and Axis ($\text{C}_2$)<br>
+                                • <strong>Gliding Joint:</strong> Between Carpals<br>
+                                • <strong>Saddle Joint:</strong> Between Carpal & Metacarpal of thumb
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- SECTION 17.5: CLINICAL DISORDERS -->
+            <div class="bg-white p-4 rounded-xl shadow-xs border border-slate-200 space-y-4 avoid-break">
+                <h3 class="font-bold text-rose-800 text-base border-b pb-1 border-rose-200 flex items-center gap-2">
+                    <span>🩺</span> 17.5 Clinical Disorders of Muscular and Skeletal Systems
+                </h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-xs">
+                    
+                    <div class="p-3 bg-rose-50 rounded-xl border border-rose-200 space-y-1">
+                        <strong class="text-rose-900 font-bold block text-sm">1. Myasthenia Gravis</strong>
+                        <p class="text-slate-700"><strong>Autoimmune disorder</strong> affecting neuromuscular junction. Leads to fatigue, weakening, and paralysis of skeletal muscle.</p>
+                    </div>
+
+                    <div class="p-3 bg-rose-50 rounded-xl border border-rose-200 space-y-1">
+                        <strong class="text-rose-900 font-bold block text-sm">2. Muscular Dystrophy</strong>
+                        <p class="text-slate-700">Progressive degeneration of skeletal muscle, mostly due to a <strong>genetic disorder</strong>.</p>
+                    </div>
+
+                    <div class="p-3 bg-rose-50 rounded-xl border border-rose-200 space-y-1">
+                        <strong class="text-rose-900 font-bold block text-sm">3. Tetany</strong>
+                        <p class="text-slate-700">Rapid spasms (wild contractions) in muscle due to <strong>low $\text{Ca}^{2+}$ levels</strong> in body fluid.</p>
+                    </div>
+
+                    <div class="p-3 bg-rose-50 rounded-xl border border-rose-200 space-y-1">
+                        <strong class="text-rose-900 font-bold block text-sm">4. Arthritis</strong>
+                        <p class="text-slate-700">Inflammation of joints causing severe pain and stiffness.</p>
+                    </div>
+
+                    <div class="p-3 bg-rose-50 rounded-xl border border-rose-200 space-y-1">
+                        <strong class="text-rose-900 font-bold block text-sm">5. Osteoporosis</strong>
+                        <p class="text-slate-700">Age-related disorder characterized by decreased bone mass and increased risk of fractures. Common cause: <strong>Decreased levels of estrogen</strong>.</p>
+                    </div>
+
+                    <div class="p-3 bg-rose-50 rounded-xl border border-rose-200 space-y-1">
+                        <strong class="text-rose-900 font-bold block text-sm">6. Gout</strong>
+                        <p class="text-slate-700">Inflammation of joints due to accumulation of <strong>uric acid crystals</strong>.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TEXTBOOK EXERCISES FULLY SOLVED -->
+        <section class="bg-white p-5 rounded-2xl shadow-xs border border-slate-200 space-y-4 avoid-break">
+            <div class="flex items-center gap-2 border-b pb-2 border-slate-200">
+                <span class="text-2xl">📝</span>
+                <h2 class="text-xl font-bold text-slate-800">Complete NCERT Textbook Exercise Solutions</h2>
+            </div>
+
+            <div class="space-y-3 text-xs">
+                
+                <!-- Question 1 -->
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                    <p class="font-bold text-bio-900">Q1. Draw the diagram of a sarcomere of skeletal muscle showing different regions.</p>
+                    <p class="text-slate-700 mt-1"><strong>Answer:</strong> Refer to <em>Figure 17.2</em> above in notes. Key labelled regions include: <strong>Z-line</strong> (bisects I-band), <strong>I-band</strong> (Actin thin filaments only), <strong>A-band</strong> (Myosin thick filaments), <strong>H-zone</strong> (un-overlapped central myosin zone), and <strong>M-line</strong> (central fibrous line).</p>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                    <p class="font-bold text-bio-900">Q2. Define sliding filament theory of muscle contraction.</p>
+                    <p class="text-slate-700 mt-1"><strong>Answer:</strong> The sliding filament theory states that contraction of a muscle fibre takes place by the sliding of the thin (actin) filaments over the thick (myosin) filaments towards the center of the A-band, resulting in the shortening of the sarcomere.</p>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                    <p class="font-bold text-bio-900">Q3. Describe the important steps in muscle contraction.</p>
+                    <p class="text-slate-700 mt-1"><strong>Answer:</strong> 1. CNS sends motor nerve signal $\rightarrow$ Acetylcholine release at motor end plate. 2. Action potential in sarcolemma causes $\text{Ca}^{2+}$ release from sarcoplasmic reticulum. 3. $\text{Ca}^{2+}$ binds Troponin, unmasking myosin sites on actin. 4. Myosin head hydrolyses ATP, forms cross-bridge, and pulls actin filaments inward (power stroke). 5. New ATP binds, breaking cross-bridge; $\text{Ca}^{2+}$ pumped back for relaxation.</p>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                    <p class="font-bold text-bio-900">Q4. Write True or False. If false, change the statement so that it is true.</p>
+                    <div class="space-y-1 mt-1 text-slate-700">
+                        <p>(a) Actin is present in thin filament. $\rightarrow$ <strong class="text-emerald-700">True</strong></p>
+                        <p>(b) H-zone of striated muscle fibre represents both thick and thin filaments. $\rightarrow$ <strong class="text-red-600">False</strong>. <em>Corrected: H-zone represents only thick filaments not overlapped by thin filaments.</em></p>
+                        <p>(c) Human skeleton has 206 bones. $\rightarrow$ <strong class="text-emerald-700">True</strong></p>
+                        <p>(d) There are 11 pairs of ribs in man. $\rightarrow$ <strong class="text-red-600">False</strong>. <em>Corrected: There are 12 pairs of ribs in humans.</em></p>
+                        <p>(e) Sternum is present on the ventral side of the body. $\rightarrow$ <strong class="text-emerald-700">True</strong></p>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                    <p class="font-bold text-bio-900">Q5. Write differences between: (a) Actin & Myosin (b) Red & White muscles (c) Pectoral & Pelvic girdle</p>
+                    <p class="text-slate-700 mt-1"><strong>Answer:</strong> Refer to detailed comparison tables structured in Sections 17.2 and 17.3 above.</p>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                    <p class="font-bold text-bio-900">Q6. Match Column I with Column II:</p>
+                    <p class="text-slate-700 mt-1"><strong>Answer:</strong> (a) Smooth muscle $\rightarrow$ <strong>(iv) Involuntary</strong> | (b) Tropomyosin $\rightarrow$ <strong>(ii) Thin filament</strong> | (c) Red muscle $\rightarrow$ <strong>(i) Myoglobin</strong> | (d) Skull $\rightarrow$ <strong>(iii) Sutures</strong></p>
+                </div>
+
+                <!-- Question 7-10 -->
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                    <p class="font-bold text-bio-900">Q9. Name the type of joint between the following:</p>
+                    <div class="grid grid-cols-2 gap-2 mt-1 text-slate-700">
+                        <p>(a) Atlas / Axis $\rightarrow$ <strong>Pivot Joint</strong></p>
+                        <p>(b) Carpal / Metacarpal of thumb $\rightarrow$ <strong>Saddle Joint</strong></p>
+                        <p>(c) Between Phalanges $\rightarrow$ <strong>Hinge Joint</strong></p>
+                        <p>(d) Femur / Acetabulum $\rightarrow$ <strong>Ball & Socket Joint</strong></p>
+                        <p>(e) Between Cranial Bones $\rightarrow$ <strong>Fibrous Joint (Sutures)</strong></p>
+                        <p>(f) Between Pubic Bones in Pelvic Girdle $\rightarrow$ <strong>Cartilaginous Joint (Pubic Symphysis)</strong></p>
+                    </div>
+                </div>
+
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                    <p class="font-bold text-bio-900">Q10. Fill in the blank spaces:</p>
+                    <p class="text-slate-700 mt-1">(a) All mammals have <strong>7</strong> cervical vertebrae. (b) Number of phalanges in each limb is <strong>14</strong>. (c) Thin filament contains 2 'F' actins and <strong>Troponin</strong> and <strong>Tropomyosin</strong>. (d) In muscle fibre $\text{Ca}^{2+}$ is stored in <strong>Sarcoplasmic Reticulum</strong>. (e) <strong>11th</strong> and <strong>12th</strong> pairs of ribs are floating ribs. (f) Human cranium is made of <strong>8</strong> bones.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FINAL REVISION CARD (LIGHT THEME) -->
+        <section class="bg-gradient-to-r from-emerald-50 via-teal-50 to-sky-50 text-slate-800 p-5 rounded-2xl shadow-sm avoid-break border-2 border-emerald-300">
+            <div class="flex items-center gap-2 mb-3">
+                <span class="text-2xl">🔄</span>
+                <h2 class="text-xl font-bold text-emerald-950">FINAL REVISION & EXAM CHECKLIST</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-slate-700">
+                <div class="p-2.5 bg-white/90 rounded-lg border border-emerald-200 shadow-xs">
+                    <strong class="text-emerald-900 block mb-1">Key Formulas & Counts</strong>
+                    <p>• Total Bones = 206 (Axial 80 + Appendicular 126)</p>
+                    <p>• Vertebral Formula = $\text{C}_7 \text{T}_{12} \text{L}_5 \text{S}_{(5)} \text{Co}_{(4)}$</p>
+                    <p>• Sarcomere = Z-line to Z-line</p>
+                </div>
+                <div class="p-2.5 bg-white/90 rounded-lg border border-teal-200 shadow-xs">
+                    <strong class="text-teal-900 block mb-1">Band Changes in Contraction</strong>
+                    <p>• I-Band: Shortens</p>
+                    <p>• H-Zone: Disappears</p>
+                    <p>• A-Band: NO CHANGE IN LENGTH!</p>
+                </div>
+                <div class="p-2.5 bg-white/90 rounded-lg border border-amber-200 shadow-xs">
+                    <strong class="text-amber-900 block mb-1">High-Yield Clinical Pearls</strong>
+                    <p>• Low $\text{Ca}^{2+}$ in fluid $\rightarrow$ Tetany</p>
+                    <p>• Low Estrogen $\rightarrow$ Osteoporosis</p>
+                    <p>• Uric Acid Crystals $\rightarrow$ Gout</p>
+                    <p>• Autoimmune Neuromuscular $\rightarrow$ Myasthenia Gravis</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="text-center text-xs text-slate-500 py-3 no-print">
+            NCERT Class 11 Biology Notes • Chapter 17: Locomotion and Movement • Light Theme Landscape Study Guide
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCERT Class 11 Biology - Breathing and Exchange of Gases (Landscape Study Guide)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                        teal: {
+                            50: '#f0fdfa',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                        },
+                        amber: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            800: '#92400e',
+                            900: '#78350f',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        /* Landscape Page Rules for PDF Generation */
+        @page {
+            size: A4 landscape;
+            margin: 8mm;
+        }
+
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background-color: #ffffff;
+            }
+            .page-break {
+                page-break-after: always;
+                break-after: page;
+            }
+            .avoid-break {
+                break-inside: avoid;
+            }
+            .shadow-lg, .shadow-md, .shadow-sm {
+                box-shadow: none !important;
+            }
+        }
+
+        /* Bordered Academic Tables */
+        .academic-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+        .academic-table th {
+            background-color: #065f46;
+            color: #ffffff;
+            font-weight: 700;
+            text-align: left;
+            padding: 8px 12px;
+            border: 1px solid #047857;
+        }
+        .academic-table td {
+            padding: 8px 12px;
+            border: 1px solid #cbd5e1;
+            vertical-align: top;
+        }
+        .academic-table tr:nth-child(even) {
+            background-color: #f0fdf4;
+        }
+        .academic-table tr:hover {
+            background-color: #e6fffa;
+        }
+
+        /* Custom Card Styles */
+        .concept-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            transition: all 0.2s ease;
+        }
+        
+        .def-card {
+            background-color: #f0fdf4;
+            border-left: 4px solid #047857;
+            border-radius: 0.5rem;
+            padding: 0.85rem 1rem;
+        }
+
+        .exam-card {
+            background-color: #fffbeb;
+            border-left: 4px solid #d97706;
+            border-radius: 0.5rem;
+            padding: 0.85rem 1rem;
+        }
+
+        .memory-card {
+            background-color: #f0f9ff;
+            border-left: 4px solid #0284c7;
+            border-radius: 0.5rem;
+            padding: 0.85rem 1rem;
+        }
+
+        /* Custom Scrollbar for interactive screen view */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0d9488;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-6 lg:p-8 max-w-[1400px] mx-auto">
+
+    <!-- Floating Action Bar for Desktop Screen -->
+    <div class="no-print fixed top-4 right-4 z-50 flex items-center gap-3 bg-white/90 backdrop-blur-md px-4 py-2.5 rounded-full shadow-lg border border-slate-200">
+        <span class="text-xs font-semibold text-emerald-800 uppercase tracking-wider">Landscape Mode PDF</span>
+        <button onclick="window.print()" class="bg-emerald-700 hover:bg-emerald-800 text-white font-medium px-4 py-1.5 rounded-full text-sm flex items-center gap-2 transition-all shadow-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+            Print / Save as PDF
+        </button>
+    </div>
+
+    <!-- UNIT 5 & SCIENTIST SPOTLIGHT BANNER -->
+    <header class="mb-6 avoid-break">
+        <div class="bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-800 text-white p-6 rounded-2xl shadow-md border-b-4 border-teal-500">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                    <div class="inline-block bg-teal-500/30 text-teal-200 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-2">
+                        NCERT Class 11 Biology • Unit 5
+                    </div>
+                    <h1 class="text-3xl lg:text-4xl font-extrabold tracking-tight">HUMAN PHYSIOLOGY</h1>
+                    <p class="text-emerald-100 text-sm mt-1 max-w-3xl leading-relaxed">
+                        Exploration of living phenomena through cellular, molecular, and systems biology perspectives. Physiological processes emerge from regulatory networks connecting cells, tissues, organs, and systems.
+                    </p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-3.5 rounded-xl border border-white/20 text-xs max-w-xs shrink-0">
+                    <span class="font-bold text-amber-300 block mb-1">📚 Chapters in Unit 5:</span>
+                    <ul class="grid grid-cols-2 gap-x-3 gap-y-1 text-emerald-100">
+                        <li class="font-bold text-white">Ch 14: Respiration</li>
+                        <li>Ch 15: Body Fluids</li>
+                        <li>Ch 16: Excretion</li>
+                        <li>Ch 17: Locomotion</li>
+                        <li>Ch 18: Neural Control</li>
+                        <li>Ch 19: Chemical Coord.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alfonso Corti Scientist Profile Card -->
+        <div class="mt-4 bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-4">
+            <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xl shrink-0 border-2 border-emerald-600">
+                AC
+            </div>
+            <div class="flex-1 text-sm">
+                <div class="flex items-center gap-2">
+                    <h3 class="font-bold text-slate-900 text-base">Alfonso Corti <span class="text-xs font-normal text-slate-500">(1822 – 1888)</span></h3>
+                    <span class="bg-emerald-100 text-emerald-800 text-[10px] font-extrabold uppercase px-2 py-0.5 rounded">Scientist Profile</span>
+                </div>
+                <p class="text-slate-600 text-xs mt-1 leading-relaxed">
+                    Italian anatomist who began his scientific career studying the cardiovascular systems of reptiles before turning attention to the mammalian auditory system. In <strong>1851</strong>, he published a paper describing the structure on the basilar membrane of the cochlea containing hair cells that convert sound vibrations into nerve impulses — named the <strong>Organ of Corti</strong> in his honor.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- CHAPTER TITLE BANNER -->
+    <div class="bg-emerald-800 text-white p-5 rounded-xl shadow-sm mb-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+            <span class="text-emerald-200 font-bold text-xs uppercase tracking-wider">Chapter 14 Complete Detailed Notes</span>
+            <h2 class="text-2xl md:text-3xl font-extrabold text-white">Breathing and Exchange of Gases</h2>
+            <p class="text-xs text-emerald-100 mt-1">Full Textbook Preservation • Exam-Oriented • Process Diagrams • Capacity Formulas</p>
+        </div>
+        <div class="flex flex-wrap gap-2 text-xs">
+            <span class="bg-emerald-700 text-emerald-100 px-3 py-1 rounded-md font-medium border border-emerald-600">NCERT Pages 183–192</span>
+            <span class="bg-teal-700 text-teal-100 px-3 py-1 rounded-md font-medium border border-teal-600">Target: NEET / Board Exams</span>
+        </div>
+    </div>
+
+    <!-- TABLE OF CONTENTS PILL GRID -->
+    <nav class="mb-6 bg-white p-4 rounded-xl border border-slate-200 shadow-sm avoid-break">
+        <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path></svg>
+            Chapter Table of Contents
+        </h4>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 text-xs font-semibold">
+            <a href="#sec-14-1" class="bg-emerald-50 text-emerald-800 p-2 rounded-lg border border-emerald-200 hover:bg-emerald-100 text-center">14.1 Respiratory Organs</a>
+            <a href="#sec-14-2" class="bg-emerald-50 text-emerald-800 p-2 rounded-lg border border-emerald-200 hover:bg-emerald-100 text-center">14.2 Mechanism of Breathing</a>
+            <a href="#sec-14-2-1" class="bg-emerald-50 text-emerald-800 p-2 rounded-lg border border-emerald-200 hover:bg-emerald-100 text-center">14.2.1 Volumes & Capacities</a>
+            <a href="#sec-14-3" class="bg-emerald-50 text-emerald-800 p-2 rounded-lg border border-emerald-200 hover:bg-emerald-100 text-center">14.3 Exchange of Gases</a>
+            <a href="#sec-14-4" class="bg-emerald-50 text-emerald-800 p-2 rounded-lg border border-emerald-200 hover:bg-emerald-100 text-center">14.4 Transport of Gases</a>
+            <a href="#sec-14-5" class="bg-emerald-50 text-emerald-800 p-2 rounded-lg border border-emerald-200 hover:bg-emerald-100 text-center">14.5 & 14.6 Regulation & Disorders</a>
+        </div>
+    </nav>
+
+    <!-- CHAPTER MIND MAP -->
+    <section class="mb-8 bg-white p-5 rounded-xl border border-slate-200 shadow-sm avoid-break">
+        <h3 class="text-base font-bold text-emerald-900 mb-3 flex items-center gap-2">
+            <span>🧠</span> CHAPTER MIND MAP — BREATHING & EXCHANGE OF GASES
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-3 text-xs">
+            <div class="bg-emerald-50 p-3 rounded-lg border border-emerald-200">
+                <span class="font-bold text-emerald-900 block border-b border-emerald-300 pb-1 mb-1.5">1. Organs & Structure</span>
+                <ul class="space-y-1 text-slate-700">
+                    <li>• Simple Diffusion (Invertebrates)</li>
+                    <li>• Cutaneous / Tracheal / Branchial</li>
+                    <li>• Pulmonary (Human System)</li>
+                    <li>• Conducting vs Exchange Part</li>
+                    <li>• Thoracic Chamber Anatomy</li>
+                </ul>
+            </div>
+            <div class="bg-teal-50 p-3 rounded-lg border border-teal-200">
+                <span class="font-bold text-teal-900 block border-b border-teal-300 pb-1 mb-1.5">2. Breathing Mechanism</span>
+                <ul class="space-y-1 text-slate-700">
+                    <li>• Pressure Gradients</li>
+                    <li>• Inspiration (Negative Pressure)</li>
+                    <li>• Expiration (Positive Pressure)</li>
+                    <li>• Diaphragm & Intercostals</li>
+                    <li>• Breathing Rate: 12-16/min</li>
+                </ul>
+            </div>
+            <div class="bg-cyan-50 p-3 rounded-lg border border-cyan-200">
+                <span class="font-bold text-cyan-900 block border-b border-cyan-300 pb-1 mb-1.5">3. Volumes & Capacities</span>
+                <ul class="space-y-1 text-slate-700">
+                    <li>• Volumes: TV, IRV, ERV, RV</li>
+                    <li>• Capacities: IC, EC, FRC, VC, TLC</li>
+                    <li>• Clinical Spirometer Assessment</li>
+                </ul>
+            </div>
+            <div class="bg-indigo-50 p-3 rounded-lg border border-indigo-200">
+                <span class="font-bold text-indigo-900 block border-b border-indigo-300 pb-1 mb-1.5">4. Gas Exchange & Transport</span>
+                <ul class="space-y-1 text-slate-700">
+                    <li>• Partial Pressures (pO<sub>2</sub>, pCO<sub>2</sub>)</li>
+                    <li>• 3-Layer Diffusion Membrane</li>
+                    <li>• Oxyhaemoglobin & Sigmoid Curve</li>
+                    <li>• CO<sub>2</sub> Bicarbonate & Carbonic Anhydrase</li>
+                </ul>
+            </div>
+            <div class="bg-amber-50 p-3 rounded-lg border border-amber-200">
+                <span class="font-bold text-amber-900 block border-b border-amber-300 pb-1 mb-1.5">5. Regulation & Disorders</span>
+                <ul class="space-y-1 text-slate-700">
+                    <li>• Respiratory Rhythm Centre (Medulla)</li>
+                    <li>• Pneumotaxic Centre (Pons)</li>
+                    <li>• Chemosensitive Area & Receptors</li>
+                    <li>• Asthma, Emphysema, Fibrosis</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 14.1: RESPIRATORY ORGANS -->
+    <section id="sec-14-1" class="mb-8 page-break">
+        <div class="bg-emerald-700 text-white px-4 py-2 rounded-t-xl font-bold text-lg flex justify-between items-center">
+            <span>14.1 RESPIRATORY ORGANS & HUMAN RESPIRATORY SYSTEM</span>
+            <span class="text-xs font-normal bg-emerald-800 px-2.5 py-1 rounded">NCERT Pages 183–185</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-b-xl border border-slate-200 border-t-0 shadow-sm space-y-6">
+            
+            <!-- Core Concept Box -->
+            <div class="def-card">
+                <h4 class="font-bold text-emerald-900 text-sm mb-1">Biological Concept of Respiration / Breathing</h4>
+                <p class="text-xs text-slate-700 leading-relaxed">
+                    Organisms utilize oxygen (O<sub>2</sub>) to indirectly break down simple nutrient molecules like glucose, amino acids, and fatty acids to derive cellular energy for metabolic activities. Harmful carbon dioxide (CO<sub>2</sub>) released during these catabolic reactions must be removed. <strong>Breathing (Respiration)</strong> is the process of continuous exchange of atmospheric O<sub>2</sub> with cellular CO<sub>2</sub>.
+                </p>
+            </div>
+
+            <!-- Comparative Table: Animal Respiratory Structures -->
+            <div>
+                <h4 class="font-bold text-slate-800 text-sm mb-2">Comparative Respiratory Mechanisms Across Animal Phyla</h4>
+                <table class="academic-table">
+                    <thead>
+                        <tr>
+                            <th>Animal Group / Organisms</th>
+                            <th>Respiratory Mechanism / Structure</th>
+                            <th>Type of Respiration</th>
+                            <th>Habitat / Special Features</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-semibold">Lower Invertebrates (Sponges, Coelenterates, Flatworms)</td>
+                            <td>Simple diffusion over entire body surface</td>
+                            <td>Cutaneous / Surface Diffusion</td>
+                            <td>Aquatic or moist environments; no specialized respiratory organs</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Earthworms</td>
+                            <td>Moist cuticle</td>
+                            <td>Cutaneous Respiration</td>
+                            <td>Moist skin facilitates direct diffusion into capillaries</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Insects</td>
+                            <td>Network of tracheal tubes</td>
+                            <td>Tracheal Respiration</td>
+                            <td>Air tubes transport atmospheric air directly throughout the body</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Aquatic Arthropods & Molluscs</td>
+                            <td>Specialized vascularised structures called <strong>Gills</strong></td>
+                            <td>Branchial Respiration</td>
+                            <td>Extract dissolved oxygen from aquatic surroundings</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Fishes</td>
+                            <td>Gills</td>
+                            <td>Branchial Respiration</td>
+                            <td>Vertebrates adapted to aquatic respiration</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Amphibians (e.g., Frogs)</td>
+                            <td>Moist skin (Cutaneous) and Lungs (Pulmonary)</td>
+                            <td>Dual (Cutaneous + Pulmonary)</td>
+                            <td>Skin used in water/hibernation; lungs used on land</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Reptiles, Birds, Mammals</td>
+                            <td>Vascularised bags called <strong>Lungs</strong></td>
+                            <td>Pulmonary Respiration</td>
+                            <td>Terrestrial vertebrates with highly developed respiratory systems</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Memory Trick Box -->
+            <div class="memory-card">
+                <span class="font-bold text-sky-900 text-xs block mb-1">🧠 Easy Way to Remember Animal Respiratory Types:</span>
+                <p class="text-xs text-slate-700">
+                    <strong>C-T-B-P</strong>: <strong>C</strong>utaneous (Skin - Frog/Worm) ➔ <strong>T</strong>racheal (Tubes - Insects) ➔ <strong>B</strong>ranchial (Gills - Fish/Molluscs) ➔ <strong>P</strong>ulmonary (Lungs - Mammals/Birds/Reptiles).
+                </p>
+            </div>
+
+            <!-- Human Respiratory System Detailed Pathway Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+                <div>
+                    <h4 class="font-bold text-emerald-900 text-sm mb-2">Sequential Pathway of Human Respiratory Tract</h4>
+                    <ol class="space-y-2 text-xs text-slate-700">
+                        <li class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                            <strong>1. External Nostrils:</strong> Pair of openings situated above the upper lips leading into the nasal passage.
+                        </li>
+                        <li class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                            <strong>2. Nasal Chamber:</strong> Passage lined with mucous membrane to filter, warm, and humidify incoming air.
+                        </li>
+                        <li class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                            <strong>3. Pharynx:</strong> Common chamber/passage for both food and atmospheric air.
+                        </li>
+                        <li class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                            <strong>4. Larynx & Glottis:</strong> Cartilaginous box assisting sound production (<strong>Sound Box</strong>). During swallowing, the glottis is covered by a thin elastic cartilaginous flap called the <strong>Epiglottis</strong> to prevent food entry.
+                        </li>
+                        <li class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                            <strong>5. Trachea:</strong> Straight tube extending to the mid-thoracic cavity. Divides at the level of the <strong>5th thoracic vertebra</strong> into right and left primary bronchi.
+                        </li>
+                        <li class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                            <strong>6. Bronchial Tree:</strong> Primary bronchi ➔ Secondary bronchi ➔ Tertiary bronchi ➔ Initial bronchioles ➔ Terminal bronchioles.
+                        </li>
+                        <li class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                            <strong>7. Alveoli:</strong> Thin, irregular-walled, highly vascularised bag-like structures arising from terminal bronchioles.
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- SVG Diagram Container: Human Respiratory System -->
+                <div class="bg-emerald-50/50 p-4 rounded-xl border border-emerald-200 text-center">
+                    <h5 class="font-bold text-xs text-emerald-900 mb-2">Figure 14.1 — Schematic View of Human Respiratory System</h5>
+                    <svg class="w-full h-64 mx-auto" viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Head/Neck Silhouette -->
+                        <path d="M160 20 C 160 10, 240 10, 240 20 L 240 60 L 160 60 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+                        <!-- Epiglottis & Larynx -->
+                        <rect x="185" y="40" width="30" height="20" rx="4" fill="#10b981" />
+                        <text x="220" y="52" font-size="10" font-weight="bold" fill="#047857">Larynx & Epiglottis</text>
+                        <!-- Trachea with Rings -->
+                        <rect x="190" y="60" width="20" height="60" rx="2" fill="#34d399" stroke="#059669" stroke-width="1.5"/>
+                        <line x1="190" y1="70" x2="210" y2="70" stroke="#047857" stroke-width="2"/>
+                        <line x1="190" y1="80" x2="210" y2="80" stroke="#047857" stroke-width="2"/>
+                        <line x1="190" y1="90" x2="210" y2="90" stroke="#047857" stroke-width="2"/>
+                        <line x1="190" y1="100" x2="210" y2="100" stroke="#047857" stroke-width="2"/>
+                        <line x1="190" y1="110" x2="210" y2="110" stroke="#047857" stroke-width="2"/>
+                        <text x="120" y="85" font-size="10" font-weight="bold" fill="#047857">Trachea (5th Vertebra)</text>
+                        <!-- Bronchi Division -->
+                        <path d="M200 120 L 160 150 M 200 120 L 240 150" stroke="#059669" stroke-width="4" stroke-linecap="round"/>
+                        <!-- Left & Right Lungs -->
+                        <path d="M120 140 C 100 150, 90 230, 160 230 C 170 230, 175 160, 150 140 Z" fill="#fca5a5" stroke="#ef4444" stroke-width="2" opacity="0.8"/>
+                        <path d="M280 140 C 300 150, 310 230, 240 230 C 230 230, 225 160, 250 140 Z" fill="#fca5a5" stroke="#ef4444" stroke-width="2" opacity="0.8"/>
+                        <text x="70" y="180" font-size="10" font-weight="bold" fill="#b91c1c">Right Lung</text>
+                        <text x="315" y="180" font-size="10" font-weight="bold" fill="#b91c1c">Left Lung</text>
+                        <!-- Heart Notch -->
+                        <path d="M190 180 C 180 180, 180 200, 200 210 C 220 200, 220 180, 210 180 Z" fill="#dc2626"/>
+                        <text x="187" y="198" font-size="8" font-weight="bold" fill="#ffffff">Heart</text>
+                        <!-- Diaphragm -->
+                        <path d="M80 240 C 160 210, 240 210, 320 240" fill="none" stroke="#d97706" stroke-width="5" stroke-linecap="round"/>
+                        <text x="160" y="255" font-size="10" font-weight="bold" fill="#b45309">Dome-shaped Diaphragm</text>
+                    </svg>
+                    <p class="text-[11px] text-slate-600 mt-2">
+                        <strong>Cartilaginous Rings support:</strong> Trachea, primary, secondary, and tertiary bronchi, and initial bronchioles to prevent collapse.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Conducting Part vs Exchange Part Comparison -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-emerald-50 p-3.5 rounded-lg border border-emerald-200">
+                    <span class="font-bold text-emerald-900 text-xs block mb-1">1. Conducting Part</span>
+                    <p class="text-xs text-slate-700"><strong>Extent:</strong> External nostrils up to terminal bronchioles.</p>
+                    <p class="text-xs text-slate-700 mt-1"><strong>Functions:</strong></p>
+                    <ul class="text-xs text-slate-700 list-disc list-inside">
+                        <li>Transports atmospheric air to the alveoli</li>
+                        <li>Clears air from foreign particles/dust</li>
+                        <li>Humidifies incoming air</li>
+                        <li>Brings air temperature to body temperature</li>
+                    </ul>
+                </div>
+                <div class="bg-teal-50 p-3.5 rounded-lg border border-teal-200">
+                    <span class="font-bold text-teal-900 text-xs block mb-1">2. Respiratory / Exchange Part</span>
+                    <p class="text-xs text-slate-700"><strong>Extent:</strong> Alveoli and their ducts.</p>
+                    <p class="text-xs text-slate-700 mt-1"><strong>Function:</strong></p>
+                    <ul class="text-xs text-slate-700 list-disc list-inside">
+                        <li>Site of actual diffusion of $O_2$ and $CO_2$ between atmospheric air and blood</li>
+                        <li>Extremely thin wall for rapid gas diffusion</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Thoracic Chamber Boundaries & Pleural Membranes -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="concept-card bg-slate-50">
+                    <h5 class="font-bold text-xs text-slate-900 mb-1">Double Pleural Membrane Protection</h5>
+                    <p class="text-xs text-slate-700 leading-relaxed">
+                        Lungs are enclosed by double-layered <strong>Pleura</strong> containing <strong>pleural fluid</strong> that reduces friction on the lung surface.
+                    </p>
+                    <ul class="text-xs text-slate-700 mt-1 space-y-0.5">
+                        <li>• <strong>Outer Pleural Membrane:</strong> In close contact with the thoracic lining.</li>
+                        <li>• <strong>Inner Pleural Membrane:</strong> In direct contact with the lung surface.</li>
+                    </ul>
+                </div>
+                <div class="concept-card bg-slate-50">
+                    <h5 class="font-bold text-xs text-slate-900 mb-1">Anatomically Air-Tight Thoracic Chamber</h5>
+                    <ul class="text-xs text-slate-700 space-y-1">
+                        <li>• <strong>Dorsally:</strong> Vertebral column</li>
+                        <li>• <strong>Ventrally:</strong> Sternum</li>
+                        <li>• <strong>Laterally:</strong> Ribs</li>
+                        <li>• <strong>Lower Side:</strong> Dome-shaped Diaphragm</li>
+                    </ul>
+                    <p class="text-[11px] text-amber-800 font-medium mt-1">
+                        *Anatomy ensures any change in thoracic volume is directly reflected in pulmonary volume (essential for breathing as we cannot alter pulmonary volume directly).
+                    </p>
+                </div>
+            </div>
+
+            <!-- 5 Steps of Respiration -->
+            <div class="border border-emerald-200 p-4 rounded-xl bg-emerald-50/30">
+                <h4 class="font-bold text-emerald-900 text-xs uppercase tracking-wider mb-2">5 Fundamental Steps Involved in Respiration</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-5 gap-2 text-center text-xs">
+                    <div class="bg-white p-2 rounded-lg border border-slate-200">
+                        <span class="font-bold text-emerald-800 block">Step 1</span>
+                        <span>Breathing / Pulmonary Ventilation (Inflow of atmospheric O<sub>2</sub> & outflow of CO<sub>2</sub>-rich alveolar air)</span>
+                    </div>
+                    <div class="bg-white p-2 rounded-lg border border-slate-200">
+                        <span class="font-bold text-emerald-800 block">Step 2</span>
+                        <span>Gas Diffusion across Alveolar Membrane</span>
+                    </div>
+                    <div class="bg-white p-2 rounded-lg border border-slate-200">
+                        <span class="font-bold text-emerald-800 block">Step 3</span>
+                        <span>Gas Transport by Blood</span>
+                    </div>
+                    <div class="bg-white p-2 rounded-lg border border-slate-200">
+                        <span class="font-bold text-emerald-800 block">Step 4</span>
+                        <span>Gas Diffusion between Blood & Tissues</span>
+                    </div>
+                    <div class="bg-white p-2 rounded-lg border border-slate-200">
+                        <span class="font-bold text-emerald-800 block">Step 5</span>
+                        <span>Cellular O<sub>2</sub> Utilisation & CO<sub>2</sub> Release</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 14.2: MECHANISM OF BREATHING -->
+    <section id="sec-14-2" class="mb-8 page-break">
+        <div class="bg-emerald-700 text-white px-4 py-2 rounded-t-xl font-bold text-lg flex justify-between items-center">
+            <span>14.2 MECHANISM OF BREATHING</span>
+            <span class="text-xs font-normal bg-emerald-800 px-2.5 py-1 rounded">NCERT Pages 185–186</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-b-xl border border-slate-200 border-t-0 shadow-sm space-y-6">
+
+            <div class="def-card">
+                <h4 class="font-bold text-emerald-900 text-sm mb-1">Pressure Gradient Rule of Breathing</h4>
+                <p class="text-xs text-slate-700 leading-relaxed">
+                    Air movement into and out of lungs is driven by a <strong>pressure gradient</strong> between lungs and atmosphere.
+                    <strong>Inspiration</strong> occurs when intra-pulmonary pressure is lower than atmospheric pressure (negative pressure).
+                    <strong>Expiration</strong> occurs when intra-pulmonary pressure is higher than atmospheric pressure.
+                </p>
+            </div>
+
+            <!-- Comparison Table: Inspiration vs Expiration -->
+            <div>
+                <h4 class="font-bold text-slate-800 text-sm mb-2">Detailed Mechanical Comparison: Inspiration vs Expiration</h4>
+                <table class="academic-table">
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Inspiration (Inhalation)</th>
+                            <th>Expiration (Exhalation)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-semibold">Definition</td>
+                            <td>Process by which atmospheric air is drawn into the lungs.</td>
+                            <td>Process by which alveolar air is expelled out of the lungs.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Pressure State</td>
+                            <td>Intra-pulmonary pressure &lt; Atmospheric pressure (Negative intra-pulmonary pressure).</td>
+                            <td>Intra-pulmonary pressure &gt; Atmospheric pressure (Positive intra-pulmonary pressure).</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Diaphragm Action</td>
+                            <td><strong>Contracts</strong> and moves downwards (flattens), increasing thoracic volume in <strong>Antero-posterior axis</strong>.</td>
+                            <td><strong>Relaxes</strong> and arches upwards to dome shape, decreasing thoracic volume in antero-posterior axis.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Intercostal Muscles</td>
+                            <td><strong>External intercostal muscles contract</strong>, lifting ribs and sternum.</td>
+                            <td>External intercostals relax; sternum and ribs return to original position.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Thoracic Axis Expansion</td>
+                            <td>Increases thoracic volume in <strong>Dorso-ventral axis</strong>.</td>
+                            <td>Reduces thoracic volume in dorso-ventral axis.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Pulmonary Volume & Pressure</td>
+                            <td>Pulmonary volume increases ➔ Intra-pulmonary pressure decreases below atmospheric ➔ Air rushes IN.</td>
+                            <td>Pulmonary volume decreases ➔ Intra-pulmonary pressure increases above atmospheric ➔ Air forced OUT.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Additional Breathing Mechanics & Facts -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+                <div class="exam-card">
+                    <span class="font-bold text-amber-900 block mb-1">⭐ Abdominal Muscles</span>
+                    <p class="text-slate-700">Humans possess the ability to increase the strength of inspiration and expiration using additional muscles in the <strong>abdomen</strong>.</p>
+                </div>
+                <div class="exam-card">
+                    <span class="font-bold text-amber-900 block mb-1">⭐ Normal Breathing Rate</span>
+                    <p class="text-slate-700">A healthy adult human breathes on average <strong>12 – 16 times per minute</strong> under physiological rest conditions.</p>
+                </div>
+                <div class="exam-card">
+                    <span class="font-bold text-amber-900 block mb-1">⭐ Clinical Spirometer</span>
+                    <p class="text-slate-700">The volume of air involved in breathing movements is measured using a <strong>Spirometer</strong> for clinical assessment of pulmonary functions.</p>
+                </div>
+            </div>
+
+            <!-- SVG Diagram Container: Breathing Mechanism -->
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                <h5 class="font-bold text-xs text-slate-800 text-center mb-3">Figure 14.2 — Visual Comparison of Breathing Mechanism</h5>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
+                    <div class="bg-white p-3 rounded-lg border border-emerald-200">
+                        <span class="font-bold text-xs text-emerald-800 block mb-1">(a) INSPIRATION</span>
+                        <svg class="w-full h-40 mx-auto" viewBox="0 0 200 140" fill="none">
+                            <path d="M100 10 L 100 40" stroke="#047857" stroke-width="3" marker-end="url(#arrow)"/>
+                            <path d="M60 40 C 60 40, 100 20, 140 40 C 150 90, 140 100, 100 100 C 60 100, 50 90, 60 40 Z" fill="#fca5a5" stroke="#dc2626" stroke-width="2"/>
+                            <!-- Diaphragm Flattened -->
+                            <path d="M40 115 C 100 115, 100 115, 160 115" stroke="#d97706" stroke-width="4"/>
+                            <text x="50" y="132" font-size="9" font-weight="bold" fill="#b45309">Diaphragm Contracted (Flattened)</text>
+                            <text x="45" y="75" font-size="8" font-weight="bold" fill="#047857">Volume ↑ Pressure ↓</text>
+                        </svg>
+                        <p class="text-[11px] text-slate-600">Ribs & Sternum raised • Thoracic cavity expands</p>
+                    </div>
+
+                    <div class="bg-white p-3 rounded-lg border border-teal-200">
+                        <span class="font-bold text-xs text-teal-800 block mb-1">(b) EXPIRATION</span>
+                        <svg class="w-full h-40 mx-auto" viewBox="0 0 200 140" fill="none">
+                            <path d="M100 40 L 100 10" stroke="#dc2626" stroke-width="3"/>
+                            <path d="M65 45 C 65 45, 100 30, 135 45 C 140 85, 135 90, 100 90 C 65 90, 60 85, 65 45 Z" fill="#fca5a5" stroke="#dc2626" stroke-width="2"/>
+                            <!-- Diaphragm Arched Up -->
+                            <path d="M40 120 C 100 95, 100 95, 160 120" fill="none" stroke="#d97706" stroke-width="4"/>
+                            <text x="45" y="132" font-size="9" font-weight="bold" fill="#b45309">Diaphragm Relaxed (Arched Up)</text>
+                            <text x="45" y="70" font-size="8" font-weight="bold" fill="#dc2626">Volume ↓ Pressure ↑</text>
+                        </svg>
+                        <p class="text-[11px] text-slate-600">Ribs & Sternum return • Air expelled out</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 14.2.1: RESPIRATORY VOLUMES AND CAPACITIES -->
+    <section id="sec-14-2-1" class="mb-8 page-break">
+        <div class="bg-emerald-700 text-white px-4 py-2 rounded-t-xl font-bold text-lg flex justify-between items-center">
+            <span>14.2.1 RESPIRATORY VOLUMES AND CAPACITIES</span>
+            <span class="text-xs font-normal bg-emerald-800 px-2.5 py-1 rounded">NCERT Pages 186–187</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-b-xl border border-slate-200 border-t-0 shadow-sm space-y-6">
+
+            <div class="def-card">
+                <h4 class="font-bold text-emerald-900 text-sm mb-1">Clinical Importance of Volumes & Capacities</h4>
+                <p class="text-xs text-slate-700 leading-relaxed">
+                    Measurement of respiratory volumes and derivation of pulmonary capacities are essential diagnostic tools in clinical medicine for evaluating pulmonary health, lung compliance, and respiratory disorders.
+                </p>
+            </div>
+
+            <!-- Master Table: Respiratory Volumes -->
+            <div>
+                <h4 class="font-bold text-slate-800 text-sm mb-2">1. Respiratory Volumes (Measured Directly by Spirometer)</h4>
+                <table class="academic-table">
+                    <thead>
+                        <tr>
+                            <th>Volume Name</th>
+                            <th>Abbreviation</th>
+                            <th>Average Volume Value</th>
+                            <th>Complete NCERT Definition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-semibold">Tidal Volume</td>
+                            <td class="font-bold text-emerald-800">TV</td>
+                            <td><strong>~500 mL</strong><br><span class="text-[11px] text-slate-500">(6000–8000 mL/min)</span></td>
+                            <td>Volume of air inspired or expired during a normal respiration. A healthy man can inspire or expire approx 6000–8000 mL per minute.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Inspiratory Reserve Volume</td>
+                            <td class="font-bold text-emerald-800">IRV</td>
+                            <td><strong>2500 mL – 3000 mL</strong></td>
+                            <td>Additional volume of air a person can inspire by a forcible inspiration.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Expiratory Reserve Volume</td>
+                            <td class="font-bold text-emerald-800">ERV</td>
+                            <td><strong>1000 mL – 1100 mL</strong></td>
+                            <td>Additional volume of air a person can expire by a forcible expiration.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Residual Volume</td>
+                            <td class="font-bold text-emerald-800">RV</td>
+                            <td><strong>1100 mL – 1200 mL</strong></td>
+                            <td>Volume of air remaining in the lungs even after a forcible expiration. <em>(Cannot be measured directly by simple spirometer)</em>.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Master Table: Pulmonary Capacities -->
+            <div>
+                <h4 class="font-bold text-slate-800 text-sm mb-2">2. Pulmonary Capacities (Derived by Combining Volumes)</h4>
+                <table class="academic-table">
+                    <thead>
+                        <tr>
+                            <th>Capacity Name</th>
+                            <th>Abbreviation</th>
+                            <th>Formula</th>
+                            <th>Approximate Value</th>
+                            <th>Complete NCERT Explanation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-semibold">Inspiratory Capacity</td>
+                            <td class="font-bold text-teal-800">IC</td>
+                            <td><strong>TV + IRV</strong></td>
+                            <td>~3000 – 3500 mL</td>
+                            <td>Total volume of air a person can inspire after a normal expiration.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Expiratory Capacity</td>
+                            <td class="font-bold text-teal-800">EC</td>
+                            <td><strong>TV + ERV</strong></td>
+                            <td>~1500 – 1600 mL</td>
+                            <td>Total volume of air a person can expire after a normal inspiration.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Functional Residual Capacity</td>
+                            <td class="font-bold text-teal-800">FRC</td>
+                            <td><strong>ERV + RV</strong></td>
+                            <td>~2100 – 2300 mL</td>
+                            <td>Volume of air that remains in lungs after a normal expiration.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Vital Capacity</td>
+                            <td class="font-bold text-teal-800">VC</td>
+                            <td><strong>ERV + TV + IRV</strong></td>
+                            <td>~3500 – 4700 mL</td>
+                            <td>Maximum volume of air a person can breathe in after a forced expiration (or breathe out after forced inspiration).</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Total Lung Capacity</td>
+                            <td class="font-bold text-teal-800">TLC</td>
+                            <td><strong>RV + ERV + TV + IRV</strong><br><em>(or VC + RV)</em></td>
+                            <td>~4600 – 5800 mL</td>
+                            <td>Total volume of air accommodated in lungs at the end of a forced inspiration.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Memory Trick Box -->
+            <div class="memory-card">
+                <span class="font-bold text-sky-900 text-xs block mb-1">🧠 Easy Memory Tricks for Capacities:</span>
+                <ul class="text-xs text-slate-700 space-y-1">
+                    <li>• <strong>IC</strong> = <strong>T</strong>idal + <strong>I</strong>nspire (TV + IRV)</li>
+                    <li>• <strong>EC</strong> = <strong>T</strong>idal + <strong>E</strong>xpire (TV + ERV)</li>
+                    <li>• <strong>FRC</strong> = What stays after normal breath = <strong>E</strong>RV + <strong>R</strong>V</li>
+                    <li>• <strong>VC</strong> = Total usable air = <strong>E</strong>RV + <strong>T</strong>V + <strong>I</strong>RV</li>
+                    <li>• <strong>TLC</strong> = Absolute Maximum Air = <strong>V</strong>ital <strong>C</strong>apacity + <strong>R</strong>esidual <strong>V</strong>olume</li>
+                </ul>
+            </div>
+
+            <!-- Mathematical Calculation Card -->
+            <div class="exam-card">
+                <span class="font-bold text-amber-900 text-xs block mb-1">⭐ Practice Calculation Note (Hourly Tidal Volume):</span>
+                <p class="text-xs text-slate-700">
+                    If normal TV = 500 mL, and breathing rate = 12 to 16 times/min:<br>
+                    Per minute volume = $500 \times 12 \text{ to } 500 \times 16 = 6000 \text{ to } 8000 \text{ mL/min}$.<br>
+                    <strong>Hourly Volume:</strong> $6000 \times 60 \text{ to } 8000 \times 60 = \mathbf{360,000 \text{ mL (360 L) to } 480,000 \text{ mL (480 L) per hour}}$.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 14.3: EXCHANGE OF GASES -->
+    <section id="sec-14-3" class="mb-8 page-break">
+        <div class="bg-emerald-700 text-white px-4 py-2 rounded-t-xl font-bold text-lg flex justify-between items-center">
+            <span>14.3 EXCHANGE OF GASES</span>
+            <span class="text-xs font-normal bg-emerald-800 px-2.5 py-1 rounded">NCERT Pages 187–188</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-b-xl border border-slate-200 border-t-0 shadow-sm space-y-6">
+
+            <div class="def-card">
+                <h4 class="font-bold text-emerald-900 text-sm mb-1">Primary Sites & Diffusion Factors</h4>
+                <p class="text-xs text-slate-700 leading-relaxed">
+                    <strong>Alveoli</strong> are the primary sites of gas exchange. Exchange also occurs between blood and body tissues. Gas exchange occurs by simple diffusion based primarily on <strong>partial pressure gradients</strong>, <strong>solubility of gases</strong>, and <strong>thickness of diffusion membrane</strong>.
+                </p>
+            </div>
+
+            <!-- Table 14.1 NCERT Partial Pressures -->
+            <div>
+                <h4 class="font-bold text-slate-800 text-sm mb-2">TABLE 14.1 — Partial Pressures (in mm Hg) of Oxygen and Carbon Dioxide</h4>
+                <table class="academic-table">
+                    <thead>
+                        <tr>
+                            <th>Respiratory Gas</th>
+                            <th>Atmospheric Air</th>
+                            <th>Alveoli</th>
+                            <th>Deoxygenated Blood</th>
+                            <th>Oxygenated Blood</th>
+                            <th>Body Tissues</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-bold text-emerald-800">Oxygen (O<sub>2</sub>)</td>
+                            <td class="font-semibold">159</td>
+                            <td class="font-bold text-emerald-700 bg-emerald-100">104</td>
+                            <td>40</td>
+                            <td class="font-semibold">95</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold text-teal-800">Carbon Dioxide (CO<sub>2</sub>)</td>
+                            <td class="font-semibold">0.3</td>
+                            <td class="font-bold text-teal-700 bg-teal-100">40</td>
+                            <td>45</td>
+                            <td class="font-semibold">40</td>
+                            <td class="font-bold text-amber-800 bg-amber-100">45</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-[11px] text-slate-600 mt-1">
+                    *The table shows a steep concentration gradient for O<sub>2</sub> from alveoli (104) ➔ blood (40) ➔ tissues (40). Conversely, CO<sub>2</sub> gradient flows from tissues (45) ➔ blood (45) ➔ alveoli (40).
+                </p>
+            </div>
+
+            <!-- Gas Solubility Factor -->
+            <div class="exam-card">
+                <span class="font-bold text-amber-900 text-xs block mb-1">⭐ Critical Fact: Solubility Difference Between Gases</span>
+                <p class="text-xs text-slate-700">
+                    The solubility of CO<sub>2</sub> is <strong>20 to 25 times higher</strong> than that of O<sub>2</sub>. Therefore, the amount of CO<sub>2</sub> that can diffuse through the diffusion membrane per unit difference in partial pressure is much higher compared to that of O<sub>2</sub>.
+                </p>
+            </div>
+
+            <!-- Gas Solubility Factor -->
+            <div class="exam-card">
+                <span class="font-bold text-amber-900 text-xs block mb-1">⭐ Critical Fact: Solubility Difference Between Gases</span>
+                <p class="text-xs text-slate-700">
+                    The solubility of $CO_2$ is <strong>20 to 25 times higher</strong> than that of $O_2$. Therefore, the amount of $CO_2$ that can diffuse through the diffusion membrane per unit difference in partial pressure is much higher compared to that of $O_2$.
+                </p>
+            </div>
+
+            <!-- 3-Layer Diffusion Membrane Structure -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+                <div>
+                    <h4 class="font-bold text-emerald-900 text-sm mb-2">The Three Major Layers of the Diffusion Membrane</h4>
+                    <p class="text-xs text-slate-700 mb-2">
+                        Total thickness of diffusion membrane is <strong>much less than a millimeter (&lt; 1 mm)</strong>, facilitating rapid diffusion.
+                    </p>
+                    <ol class="space-y-2 text-xs text-slate-700">
+                        <li class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                            <strong>1. Thin Squamous Epithelium:</strong> Single-celled thick lining of the alveolar wall.
+                        </li>
+                        <li class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                            <strong>2. Endothelium of Alveolar Capillaries:</strong> Single-celled endothelial wall surrounding capillary blood vessels.
+                        </li>
+                        <li class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                            <strong>3. Basement Substance:</strong> Composed of a thin basement membrane supporting alveolar epithelium + basement membrane surrounding capillary endothelial cells.
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- SVG Diagram: Alveolus & Capillary Cross Section -->
+                <div class="bg-emerald-50/40 p-4 rounded-xl border border-emerald-200 text-center">
+                    <h5 class="font-bold text-xs text-emerald-900 mb-2">Figure 14.4 — Diagram of Section of an Alveolus with Pulmonary Capillary</h5>
+                    <svg class="w-full h-56 mx-auto" viewBox="0 0 320 200" fill="none">
+                        <!-- Alveolar Cavity -->
+                        <circle cx="130" cy="100" r="70" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" stroke-dasharray="4 2"/>
+                        <text x="95" y="95" font-size="11" font-weight="bold" fill="#0369a1">Alveolar Cavity</text>
+                        <text x="105" y="110" font-size="9" fill="#0284c7">Air Space</text>
+                        
+                        <!-- Capillary Loop -->
+                        <path d="M40 160 C 90 190, 180 190, 220 140 C 240 110, 230 50, 180 30" fill="none" stroke="#f43f5e" stroke-width="22" stroke-linecap="round" opacity="0.4"/>
+                        <path d="M40 160 C 90 190, 180 190, 220 140 C 240 110, 230 50, 180 30" fill="none" stroke="#be123c" stroke-width="2"/>
+                        
+                        <!-- RBCs -->
+                        <circle cx="80" cy="172" r="6" fill="#dc2626"/>
+                        <circle cx="130" cy="180" r="6" fill="#dc2626"/>
+                        <circle cx="180" cy="165" r="6" fill="#dc2626"/>
+                        <circle cx="215" cy="125" r="6" fill="#dc2626"/>
+                        <text x="210" y="175" font-size="9" font-weight="bold" fill="#dc2626">RBC</text>
+
+                        <!-- Layers Labels -->
+                        <line x1="170" y1="65" x2="250" y2="40" stroke="#0f172a" stroke-width="1"/>
+                        <text x="200" y="35" font-size="8" font-weight="bold" fill="#0f172a">1. Squamous Epithelium</text>
+
+                        <line x1="190" y1="100" x2="250" y2="80" stroke="#0f172a" stroke-width="1"/>
+                        <text x="200" y="75" font-size="8" font-weight="bold" fill="#0f172a">2. Basement Substance</text>
+
+                        <line x1="205" y1="140" x2="250" y2="120" stroke="#0f172a" stroke-width="1"/>
+                        <text x="200" y="115" font-size="8" font-weight="bold" fill="#0f172a">3. Capillary Endothelium</text>
+
+                        <!-- Gas Flow Arrows -->
+                        <path d="M120 130 L 120 160" stroke="#047857" stroke-width="2" marker-end="url(#arrow)"/>
+                        <text x="125" y="145" font-size="8" font-weight="bold" fill="#047857">O₂ Diffusion</text>
+                        <path d="M140 160 L 140 130" stroke="#b45309" stroke-width="2"/>
+                        <text x="145" y="145" font-size="8" font-weight="bold" fill="#b45309">CO₂ Diffusion</text>
+                    </svg>
+                    <p class="text-[11px] text-slate-600 mt-1">Total diffusion barrier thickness &lt; 1 mm, creating ideal conditions for gas exchange.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 14.4: TRANSPORT OF GASES -->
+    <section id="sec-14-4" class="mb-8 page-break">
+        <div class="bg-emerald-700 text-white px-4 py-2 rounded-t-xl font-bold text-lg flex justify-between items-center">
+            <span>14.4 TRANSPORT OF GASES</span>
+            <span class="text-xs font-normal bg-emerald-800 px-2.5 py-1 rounded">NCERT Pages 189–190</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-b-xl border border-slate-200 border-t-0 shadow-sm space-y-6">
+
+            <!-- Summary Transport Modes Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-200">
+                    <h4 class="font-bold text-emerald-900 text-sm mb-2">Transport Mechanisms of Oxygen (O<sub>2</sub>)</h4>
+                    <ul class="space-y-2 text-xs text-slate-700">
+                        <li class="bg-white p-2 rounded border border-emerald-200 flex justify-between items-center">
+                            <span><strong>As Oxyhaemoglobin (in RBCs):</strong></span>
+                            <span class="font-bold text-emerald-800 text-sm">97%</span>
+                        </li>
+                        <li class="bg-white p-2 rounded border border-emerald-200 flex justify-between items-center">
+                            <span><strong>Dissolved State in Blood Plasma:</strong></span>
+                            <span class="font-bold text-emerald-800 text-sm">3%</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-teal-50 p-4 rounded-xl border border-teal-200">
+                    <h4 class="font-bold text-teal-900 text-sm mb-2">Transport Mechanisms of Carbon Dioxide (CO<sub>2</sub>)</h4>
+                    <ul class="space-y-2 text-xs text-slate-700">
+                        <li class="bg-white p-2 rounded border border-teal-200 flex justify-between items-center">
+                            <span><strong>As Bicarbonate Ions (HCO<sub>3</sub><sup>-</sup>):</strong></span>
+                            <span class="font-bold text-teal-800 text-sm">70%</span>
+                        </li>
+                        <li class="bg-white p-2 rounded border border-teal-200 flex justify-between items-center">
+                            <span><strong>As Carbamino-haemoglobin (RBCs):</strong></span>
+                            <span class="font-bold text-teal-800 text-sm">20 – 25%</span>
+                        </li>
+                        <li class="bg-white p-2 rounded border border-teal-200 flex justify-between items-center">
+                            <span><strong>Dissolved State in Plasma:</strong></span>
+                            <span class="font-bold text-teal-800 text-sm">7%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SECTION 14.4.1: TRANSPORT OF OXYGEN -->
+            <div class="space-y-4">
+                <h4 class="font-bold text-emerald-900 text-sm border-b border-emerald-200 pb-1">14.4.1 Transport of Oxygen & Oxygen Dissociation Curve</h4>
+                
+                <p class="text-xs text-slate-700 leading-relaxed">
+                    Haemoglobin is a red-coloured iron-containing pigment present in RBCs. O<sub>2</sub> binds reversibly with haemoglobin to form <strong>Oxyhaemoglobin</strong>. Each haemoglobin molecule can carry a maximum of <strong>4 molecules of O<sub>2</sub></strong>.
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+                    <!-- Curve Explanation & Factors -->
+                    <div class="space-y-3 text-xs">
+                        <div class="def-card">
+                            <span class="font-bold text-emerald-900 block mb-1">Oxygen Dissociation Curve Definition</span>
+                            <p class="text-slate-700">
+                                A <strong>Sigmoid curve</strong> obtained when percentage saturation of haemoglobin with O<sub>2</sub> is plotted against partial pressure of oxygen (pO<sub>2</sub>).
+                            </p>
+                        </div>
+
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-200">
+                            <span class="font-bold text-slate-900 block mb-1">Conditions Favouring Binding in Alveoli (Shift to Left):</span>
+                            <ul class="text-slate-700 list-disc list-inside space-y-0.5">
+                                <li>High pO<sub>2</sub></li>
+                                <li>Low pCO<sub>2</sub></li>
+                                <li>Lesser H<sup>+</sup> ion concentration (higher pH)</li>
+                                <li>Lower temperature</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-amber-50 p-3 rounded-lg border border-amber-200">
+                            <span class="font-bold text-amber-900 block mb-1">Conditions Favouring Dissociation in Tissues (Shift to Right):</span>
+                            <ul class="text-slate-700 list-disc list-inside space-y-0.5">
+                                <li>Low pO<sub>2</sub></li>
+                                <li>High pCO<sub>2</sub></li>
+                                <li>High H<sup>+</sup> ion concentration (lower pH)</li>
+                                <li>Higher temperature</li>
+                            </ul>
+                        </div>
+
+                        <div class="exam-card">
+                            <span class="font-bold text-amber-900 block mb-1">⭐ NCERT Delivery Value:</span>
+                            <p class="text-slate-700">
+                                Every <strong>100 mL of oxygenated blood</strong> delivers approximately <strong>5 mL of O<sub>2</sub></strong> to the tissues under normal physiological conditions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- SVG Diagram: Oxygen Dissociation Curve -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm">
+                        <h5 class="font-bold text-xs text-slate-800 mb-2">Figure 14.5 — Oxygen Dissociation Curve (Sigmoid Graph)</h5>
+                        <svg class="w-full h-56 mx-auto" viewBox="0 0 280 200" fill="none">
+                            <!-- Axes -->
+                            <line x1="40" y1="170" x2="260" y2="170" stroke="#475569" stroke-width="2"/>
+                            <line x1="40" y1="170" x2="40" y2="20" stroke="#475569" stroke-width="2"/>
+                            
+                            <!-- Grid lines -->
+                            <line x1="40" y1="140" x2="260" y2="140" stroke="#e2e8f0" stroke-width="1"/>
+                            <line x1="40" y1="110" x2="260" y2="110" stroke="#e2e8f0" stroke-width="1"/>
+                            <line x1="40" y1="80" x2="260" y2="80" stroke="#e2e8f0" stroke-width="1"/>
+                            <line x1="40" y1="50" x2="260" y2="50" stroke="#e2e8f0" stroke-width="1"/>
+
+                            <!-- Y-axis Labels (% Saturation) -->
+                            <text x="15" y="173" font-size="8" fill="#64748b">0</text>
+                            <text x="15" y="143" font-size="8" fill="#64748b">20</text>
+                            <text x="15" y="113" font-size="8" fill="#64748b">40</text>
+                            <text x="15" y="83" font-size="8" fill="#64748b">60</text>
+                            <text x="15" y="53" font-size="8" fill="#64748b">80</text>
+                            <text x="10" y="25" font-size="8" font-weight="bold" fill="#047857">100%</text>
+
+                            <!-- X-axis Labels (pO2) -->
+                            <text x="40" y="185" font-size="8" fill="#64748b">0</text>
+                            <text x="80" y="185" font-size="8" fill="#64748b">20</text>
+                            <text x="120" y="185" font-size="8" fill="#64748b">40</text>
+                            <text x="160" y="185" font-size="8" fill="#64748b">60</text>
+                            <text x="200" y="185" font-size="8" fill="#64748b">80</text>
+                            <text x="240" y="185" font-size="8" fill="#64748b">100</text>
+                            <text x="100" y="197" font-size="8" font-weight="bold" fill="#0f172a">pO₂ (mm Hg)</text>
+
+                            <!-- Sigmoid Curve -->
+                            <path d="M40 170 Q 90 160, 110 120 T 200 45 L 260 40" fill="none" stroke="#059669" stroke-width="3"/>
+
+                            <!-- P50 point -->
+                            <circle cx="100" cy="122" r="4" fill="#dc2626"/>
+                            <text x="110" y="130" font-size="8" font-weight="bold" fill="#dc2626">P₅₀ (~27 mmHg)</text>
+                        </svg>
+                        <p class="text-[10px] text-slate-500 mt-1">Sigmoid shape reflects cooperative binding of oxygen to 4 haemoglobin subunits.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 14.4.2: TRANSPORT OF CARBON DIOXIDE -->
+            <div class="space-y-4">
+                <h4 class="font-bold text-teal-900 text-sm border-b border-teal-200 pb-1">14.4.2 Transport of Carbon Dioxide & Carbonic Anhydrase Reaction</h4>
+
+                <p class="text-xs text-slate-700 leading-relaxed">
+                    CO<sub>2</sub> is carried by haemoglobin as <strong>Carbamino-haemoglobin</strong> (20–25%). Binding is governed by pCO<sub>2</sub>. High pCO<sub>2</sub> and low pO<sub>2</sub> in tissues promote binding; low pCO<sub>2</sub> and high pO<sub>2</sub> in alveoli promote dissociation.
+                </p>
+
+                <!-- Carbonic Anhydrase Enzyme Reaction Box -->
+                <div class="bg-teal-50 p-4 rounded-xl border border-teal-300 text-center">
+                    <span class="font-bold text-teal-900 text-xs uppercase tracking-wider block mb-2">Reversible Enzymatic Reaction (Carbonic Anhydrase)</span>
+                    <p class="text-xs text-slate-600 mb-2">
+                        RBCs contain an extremely high concentration of the enzyme <strong>Carbonic Anhydrase</strong> (minute quantities also exist in plasma).
+                    </p>
+                    <div class="inline-block bg-white px-6 py-3 rounded-lg border border-teal-200 font-mono font-bold text-teal-900 text-sm shadow-sm">
+                        CO<sub>2</sub> + H<sub>2</sub>O 
+                        <span class="text-teal-600 text-xs font-sans px-2">⇌ (Carbonic Anhydrase) ⇌</span> 
+                        H<sub>2</sub>CO<sub>3</sub> 
+                        <span class="text-teal-600 text-xs font-sans px-2">⇌ (Carbonic Anhydrase) ⇌</span> 
+                        HCO<sub>3</sub><sup>-</sup> + H<sup>+</sup>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-left mt-3">
+                        <div class="bg-white p-2.5 rounded border border-teal-200">
+                            <strong>At Tissue Site (High pCO<sub>2</sub>):</strong> CO<sub>2</sub> diffuses into blood and forms HCO<sub>3</sub><sup>-</sup> and H<sup>+</sup>.
+                        </div>
+                        <div class="bg-white p-2.5 rounded border border-teal-200">
+                            <strong>At Alveolar Site (Low pCO<sub>2</sub>):</strong> Reaction proceeds in reverse direction, converting HCO<sub>3</sub><sup>-</sup> back to CO<sub>2</sub> and H<sub>2</sub>O to be expired.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exam-card">
+                    <span class="font-bold text-amber-900 text-xs block mb-1">⭐ NCERT Delivery Value for CO<sub>2</sub>:</span>
+                    <p class="text-xs text-slate-700">
+                        Every <strong>100 mL of deoxygenated blood</strong> delivers approximately <strong>4 mL of CO<sub>2</sub></strong> to the alveoli.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 14.5 & 14.6: REGULATION & DISORDERS -->
+    <section id="sec-14-5" class="mb-8 page-break">
+        <div class="bg-emerald-700 text-white px-4 py-2 rounded-t-xl font-bold text-lg flex justify-between items-center">
+            <span>14.5 REGULATION OF RESPIRATION & 14.6 DISORDERS</span>
+            <span class="text-xs font-normal bg-emerald-800 px-2.5 py-1 rounded">NCERT Pages 190–191</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-b-xl border border-slate-200 border-t-0 shadow-sm space-y-6">
+
+            <!-- SECTION 14.5: REGULATION -->
+            <div>
+                <h4 class="font-bold text-emerald-900 text-sm mb-3">14.5 Neural & Chemical Control of Respiration</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+                    <div class="concept-card border-emerald-200 bg-emerald-50/50">
+                        <span class="font-bold text-emerald-900 block text-xs mb-1">1. Respiratory Rhythm Centre</span>
+                        <p class="text-slate-700">Located in the <strong>Medulla oblongata</strong> region of brain. Primary centre responsible for maintaining basic respiratory rhythm.</p>
+                    </div>
+
+                    <div class="concept-card border-teal-200 bg-teal-50/50">
+                        <span class="font-bold text-teal-900 block text-xs mb-1">2. Pneumotaxic Centre</span>
+                        <p class="text-slate-700">Located in the <strong>Pons</strong> region of brain. Moderates functions of rhythm centre. Signals <strong>reduce duration of inspiration</strong>, altering respiratory rate.</p>
+                    </div>
+
+                    <div class="concept-card border-cyan-200 bg-cyan-50/50">
+                        <span class="font-bold text-cyan-900 block text-xs mb-1">3. Chemosensitive Area</span>
+                        <p class="text-slate-700">Situated adjacent to rhythm centre. Highly sensitive to <strong>CO<sub>2</sub> and H<sup>+</sup> ions</strong>. Activates rhythm centre to speed up elimination when levels rise.</p>
+                    </div>
+
+                    <div class="concept-card border-indigo-200 bg-indigo-50/50">
+                        <span class="font-bold text-indigo-900 block text-xs mb-1">4. Aortic Arch & Carotid Receptors</span>
+                        <p class="text-slate-700">Receptors associated with <strong>aortic arch</strong> and <strong>carotid artery</strong> recognize CO<sub>2</sub> and H<sup>+</sup> concentration changes and send signals to rhythm centre.</p>
+                    </div>
+                </div>
+
+                <div class="exam-card mt-3">
+                    <span class="font-bold text-amber-900 text-xs block mb-0.5">⭐ Crucial NCERT Exception Rule:</span>
+                    <p class="text-xs text-slate-700">
+                        The role of <strong>Oxygen (O<sub>2</sub>)</strong> in the regulation of respiratory rhythm is <strong>quite insignificant</strong>. Regulation is primarily driven by CO<sub>2</sub> and H<sup>+</sup> ion levels.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 14.5 & 14.6: REGULATION & DISORDERS -->
+    <section id="sec-14-5" class="mb-8 page-break">
+        <div class="bg-emerald-700 text-white px-4 py-2 rounded-t-xl font-bold text-lg flex justify-between items-center">
+            <span>14.5 REGULATION OF RESPIRATION & 14.6 DISORDERS</span>
+            <span class="text-xs font-normal bg-emerald-800 px-2.5 py-1 rounded">NCERT Pages 190–191</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-b-xl border border-slate-200 border-t-0 shadow-sm space-y-6">
+
+            <!-- SECTION 14.5: REGULATION -->
+            <div>
+                <h4 class="font-bold text-emerald-900 text-sm mb-3">14.5 Neural & Chemical Control of Respiration</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+                    <div class="concept-card border-emerald-200 bg-emerald-50/50">
+                        <span class="font-bold text-emerald-900 block text-xs mb-1">1. Respiratory Rhythm Centre</span>
+                        <p class="text-slate-700">Located in the <strong>Medulla oblongata</strong> region of brain. Primary centre responsible for maintaining basic respiratory rhythm.</p>
+                    </div>
+
+                    <div class="concept-card border-teal-200 bg-teal-50/50">
+                        <span class="font-bold text-teal-900 block text-xs mb-1">2. Pneumotaxic Centre</span>
+                        <p class="text-slate-700">Located in the <strong>Pons</strong> region of brain. Moderates functions of rhythm centre. Signals <strong>reduce duration of inspiration</strong>, altering respiratory rate.</p>
+                    </div>
+
+                    <div class="concept-card border-cyan-200 bg-cyan-50/50">
+                        <span class="font-bold text-cyan-900 block text-xs mb-1">3. Chemosensitive Area</span>
+                        <p class="text-slate-700">Situated adjacent to rhythm centre. Highly sensitive to <strong>$CO_2$ and $H^+$ ions</strong>. Activates rhythm centre to speed up elimination when levels rise.</p>
+                    </div>
+
+                    <div class="concept-card border-indigo-200 bg-indigo-50/50">
+                        <span class="font-bold text-indigo-900 block text-xs mb-1">4. Aortic Arch & Carotid Receptors</span>
+                        <p class="text-slate-700">Receptors associated with <strong>aortic arch</strong> and <strong>carotid artery</strong> recognize $CO_2$ and $H^+$ concentration changes and send signals to rhythm centre.</p>
+                    </div>
+                </div>
+
+                <div class="exam-card mt-3">
+                    <span class="font-bold text-amber-900 text-xs block mb-0.5">⭐ Crucial NCERT Exception Rule:</span>
+                    <p class="text-xs text-slate-700">
+                        The role of <strong>Oxygen ($O_2$)</strong> in the regulation of respiratory rhythm is <strong>quite insignificant</strong>. Regulation is primarily driven by $CO_2$ and $H^+$ ion levels.
+                    </p>
+                </div>
+            </div>
+
+            <!-- SECTION 14.6: DISORDERS -->
+            <div>
+                <h4 class="font-bold text-emerald-900 text-sm mb-3">14.6 Disorders of Respiratory System</h4>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                    
+                    <div class="bg-rose-50 p-4 rounded-xl border border-rose-200">
+                        <span class="font-bold text-rose-900 text-sm block mb-1">1. Asthma</span>
+                        <p class="text-slate-700 leading-relaxed">
+                            Difficulty in breathing causing <strong>wheezing</strong> due to <strong>inflammation of bronchi and bronchioles</strong>.
+                        </p>
+                    </div>
+
+                    <div class="bg-orange-50 p-4 rounded-xl border border-orange-200">
+                        <span class="font-bold text-orange-900 text-sm block mb-1">2. Emphysema</span>
+                        <p class="text-slate-700 leading-relaxed">
+                            A <strong>chronic disorder</strong> in which alveolar walls are damaged, resulting in a permanent <strong>decrease in respiratory surface area</strong>. Major cause: <strong>Cigarette smoking</strong>.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-100 p-4 rounded-xl border border-slate-300">
+                        <span class="font-bold text-slate-900 text-sm block mb-1">3. Occupational Disorders</span>
+                        <p class="text-slate-700 leading-relaxed">
+                            Seen in industries involving <strong>grinding or stone-breaking</strong>. Excessive dust causes inflammation leading to <strong>Fibrosis</strong> (proliferation of fibrous tissues) and serious lung damage. Protective masks are essential.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 14.7: FINAL REVISION SUMMARY -->
+    <section class="mb-8 avoid-break">
+        <div class="bg-emerald-900 text-white px-4 py-2.5 rounded-t-xl font-bold text-lg flex items-center gap-2">
+            <span>🔄</span> FINAL REVISION — QUICK RECALL SUMMARY
+        </div>
+        <div class="bg-white p-5 rounded-b-xl border border-slate-200 border-t-0 shadow-sm">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+                <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
+                    <strong class="text-emerald-800 block">500 mL</strong> Normal Tidal Volume (TV)
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
+                    <strong class="text-emerald-800 block">12 - 16 / min</strong> Normal Breathing Rate
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
+                    <strong class="text-emerald-800 block">104 mm Hg</strong> pO<sub>2</sub> in Alveoli
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
+                    <strong class="text-emerald-800 block">40 mm Hg</strong> pCO<sub>2</sub> in Alveoli
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
+                    <strong class="text-emerald-800 block">5 mL O<sub>2</sub></strong> Delivered per 100 mL blood
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
+                    <strong class="text-emerald-800 block">4 mL CO<sub>2</sub></strong> Delivered per 100 mL blood
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
+                    <strong class="text-emerald-800 block">70% CO<sub>2</sub></strong> Transported as Bicarbonate
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
+                    <strong class="text-emerald-800 block">97% O<sub>2</sub></strong> Transported as Oxyhaemoglobin
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 14.8: NCERT EXERCISE QUESTIONS & DETAILED SOLUTIONS -->
+    <section class="mb-8 page-break">
+        <div class="bg-emerald-800 text-white px-4 py-2.5 rounded-t-xl font-bold text-lg flex justify-between items-center">
+            <span>📝 NCERT CHAPTER EXERCISES & DETAILED SOLUTIONS</span>
+            <span class="text-xs bg-emerald-900 px-2.5 py-1 rounded">Page 192 • Questions 1 to 14</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-b-xl border border-slate-200 border-t-0 shadow-sm space-y-4 text-xs">
+
+            <!-- Q1 -->
+            <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-200">
+                <span class="font-bold text-emerald-900 block mb-1">Q1. Define vital capacity. What is its significance?</span>
+                <p class="text-slate-700 leading-relaxed">
+                    <strong>Answer:</strong> <strong>Vital Capacity (VC)</strong> is defined as the maximum volume of air a person can breathe in after a forced expiration (or the maximum volume of air a person can breathe out after a forced inspiration). Formula: VC = ERV + TV + IRV.<br>
+                    <strong>Significance:</strong> It indicates the maximum working capacity and strength of the respiratory muscles and lungs. Higher vital capacity provides greater ability to supply O<sub>2</sub> during intense muscular exercise.
+                </p>
+            </div>
+
+            <!-- Q2 -->
+            <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-200">
+                <span class="font-bold text-emerald-900 block mb-1">Q2. State the volume of air remaining in the lungs after a normal breathing.</span>
+                <p class="text-slate-700 leading-relaxed">
+                    <strong>Answer:</strong> The volume of air remaining in lungs after normal expiration is called <strong>Functional Residual Capacity (FRC)</strong>.<br>
+                    FRC = ERV + RV = 1000–1100 mL + 1100–1200 mL = <strong>2100 to 2300 mL</strong>.
+                </p>
+            </div>
+
+            <!-- Q3 -->
+            <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-200">
+                <span class="font-bold text-emerald-900 block mb-1">Q3. Diffusion of gases occurs in the alveolar region only and not in the other parts of respiratory system. Why?</span>
+                <p class="text-slate-700 leading-relaxed">
+                    <strong>Answer:</strong> Diffusion occurs exclusively in alveoli because alveoli possess an extremely thin diffusion membrane (&lt; 1 mm) made of single-celled squamous epithelium closely lined with blood capillaries, providing a huge surface area. Other conducting parts (trachea, bronchi) have thick cartilaginous rings and ciliated epithelium meant only for air transport.
+                </p>
+            </div>
+
+            <!-- Q4 -->
+            <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-200">
+                <span class="font-bold text-emerald-900 block mb-1">Q4. What are the major transport mechanisms for CO<sub>2</sub>? Explain.</span>
+                <p class="text-slate-700 leading-relaxed">
+                    <strong>Answer:</strong> CO<sub>2</sub> is transported by 3 mechanisms:<br>
+                    1. <strong>As Bicarbonate Ions (70%):</strong> CO<sub>2</sub> reacts with H<sub>2</sub>O inside RBCs catalyzed by <em>Carbonic Anhydrase</em> to form H<sub>2</sub>CO<sub>3</sub>, which dissociates into HCO<sub>3</sub><sup>-</sup> and H<sup>+</sup>.<br>
+                    2. <strong>As Carbamino-haemoglobin (20–25%):</strong> CO<sub>2</sub> binds directly to the amino groups of haemoglobin in RBCs.<br>
+                    3. <strong>Dissolved in Plasma (7%):</strong> Transported in physical solution state in blood plasma.
+                </p>
+            </div>
+
+            <!-- Q5 -->
+            <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-200">
+                <span class="font-bold text-emerald-900 block mb-1">Q5. What will be the pO<sub>2</sub> and pCO<sub>2</sub> in the atmospheric air compared to those in the alveolar air?</span>
+                <p class="text-slate-700 leading-relaxed">
+                    <strong>Answer:</strong> Correct Option: <strong>(ii) pO<sub>2</sub> higher, pCO<sub>2</sub> lesser</strong>.<br>
+                    <em>Explanation:</em> Atmospheric air has pO<sub>2</sub> = 159 mm Hg and pCO<sub>2</sub> = 0.3 mm Hg, whereas alveolar air has pO<sub>2</sub> = 104 mm Hg and pCO<sub>2</sub> = 40 mm Hg.
+                </p>
+            </div>
+
+            <!-- Q6 -->
+            <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-200">
+                <span class="font-bold text-emerald-900 block mb-1">Q6. Explain the process of inspiration under normal conditions.</span>
+                <p class="text-slate-700 leading-relaxed">
+                    <strong>Answer:</strong> Inspiration is an active process initiated by: (1) Contraction of diaphragm flattening it and increasing thoracic volume in antero-posterior axis. (2) Contraction of external intercostal muscles lifting ribs and sternum, increasing volume in dorso-ventral axis. The overall increase in thoracic volume increases pulmonary volume, dropping intra-pulmonary pressure below atmospheric pressure, forcing atmospheric air into lungs.
+                </p>
+            </div>
+
+            <!-- Q7 -->
+            <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-200">
+                <span class="font-bold text-emerald-900 block mb-1">Q7. How is respiration regulated?</span>
+                <p class="text-slate-700 leading-relaxed">
+                    <strong>Answer:</strong> Respiration is regulated neurally and chemically: (1) <strong>Respiratory Rhythm Centre</strong> in Medulla maintains basic rhythm. (2) <strong>Pneumotaxic Centre</strong> in Pons reduces inspiration duration. (3) <strong>Chemosensitive Area</strong> adjacent to rhythm centre responds to elevated CO<sub>2</sub> and H<sup>+</sup> ions. (4) Receptors in <strong>Aortic arch & Carotid artery</strong> detect CO<sub>2</sub> / H<sup>+</sup> changes and send corrective signals.
+                </p>
+            </div>
+
+            <!-- Q8 -->
+            <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-200">
+                <span class="font-bold text-emerald-900 block mb-1">Q8. What is the effect of pCO<sub>2</sub> on oxygen transport?</span>
+                <p class="text-slate-700 leading-relaxed">
+                    <strong>Answer:</strong> High pCO<sub>2</sub> lowers haemoglobin affinity for O<sub>2</sub> (Bohr Effect), shifting oxygen dissociation curve to the right and promoting O<sub>2</sub> release to tissues. Conversely, low pCO<sub>2</sub> in alveoli promotes O<sub>2</sub> binding to haemoglobin.
+                </p>
+            </div>
+
+            <!-- Q9 -->
+            <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-200">
+                <span class="font-bold text-emerald-900 block mb-1">Q9. What happens to the respiratory process in a man going up a hill?</span>
+                <p class="text-slate-700 leading-relaxed">
+                    <strong>Answer:</strong> At high altitudes, atmospheric pressure and pO<sub>2</sub> decrease, leading to hypoxia. To compensate, breathing rate increases, heart rate increases, and over time RBC production increases (stimulated by erythropoietin).
+                </p>
+            </div>
+
+            <!-- Q10 -->
+            <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-200">
+                <span class="font-bold text-emerald-900 block mb-1">Q10. What is the site of gaseous exchange in an insect?</span>
+                <p class="text-slate-700 leading-relaxed">
+                    <strong>Answer:</strong> <strong>Tracheoles</strong> (the finest branches of the tracheal network) where direct gas exchange occurs with body tissues.
+                </p>
+            </div>
+
+            <!-- Q11 -->
+            <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-200">
+                <span class="font-bold text-emerald-900 block mb-1">Q11. Define oxygen dissociation curve. Can you suggest any reason for its sigmoidal pattern?</span>
+                <p class="text-slate-700 leading-relaxed">
+                    <strong>Answer:</strong> It is the graphic plot of percentage saturation of haemoglobin against partial pressure of oxygen (pO<sub>2</sub>).<br>
+                    <strong>Reason for Sigmoidal Pattern:</strong> Cooperative binding of oxygen. Binding of the first O<sub>2</sub> molecule to one haem subunit induces a conformational change that increases affinity of remaining subunits for O<sub>2</sub>.
+                </p>
+            </div>
+
+            <!-- Q12 -->
+            <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-200">
+                <span class="font-bold text-slate-900 block mb-1">Q12. Have you heard about hypoxia? Try to gather information about it, and discuss with your friends.</span>
+                <p class="text-slate-700 leading-relaxed">
+                    <strong>Answer:</strong> <strong>Hypoxia</strong> is a pathological condition where body tissues receive insufficient oxygen supply. Causes include high altitude (hypoxic hypoxia), anaemia (anaemic hypoxia), or toxic chemicals like carbon monoxide poisoning.
+                </p>
+            </div>
+
+            <!-- Q13 -->
+            <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-200">
+                <span class="font-bold text-emerald-900 block mb-1">Q13. Distinguish between: (a) IRV and ERV (b) Inspiratory capacity and Expiratory capacity (c) Vital capacity and Total lung capacity.</span>
+                <p class="text-slate-700 leading-relaxed">
+                    <strong>Answer:</strong><br>
+                    (a) <strong>IRV vs ERV:</strong> IRV is extra volume inspired forcibly (~2500–3000 mL); ERV is extra volume expired forcibly (~1000–1100 mL).<br>
+                    (b) <strong>IC vs EC:</strong> IC = TV + IRV (~3000–3500 mL); EC = TV + ERV (~1500–1600 mL).<br>
+                    (c) <strong>VC vs TLC:</strong> VC = ERV + TV + IRV (~3500–4700 mL); TLC = VC + RV (~4600–5800 mL).
+                </p>
+            </div>
+
+            <!-- Q14 -->
+            <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-200">
+                <span class="font-bold text-emerald-900 block mb-1">Q14. What is Tidal volume? Find out the Tidal volume (approximate value) for a healthy human in an hour.</span>
+                <p class="text-slate-700 leading-relaxed">
+                    <strong>Answer:</strong> <strong>Tidal Volume (TV)</strong> is the volume of air inspired or expired during a normal breath (~500 mL).<br>
+                    <strong>Hourly Calculation:</strong><br>
+                    Per minute volume = 500 mL × 12 to 16 breaths/min = 6000 to 8000 mL/min.<br>
+                    Per hour volume = 6000 to 8000 mL × 60 minutes = <strong>360,000 mL (360 L) to 480,000 mL (480 L)</strong>.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-8 pt-4 border-t border-slate-200 text-center text-xs text-slate-500 avoid-break">
+        <p>NCERT Class 11 Biology • Chapter 14: Breathing and Exchange of Gases • Complete Landscape Academic Document</p>
+        <p class="text-[10px] text-slate-400 mt-0.5">Designed for high-contrast printable study notes & PDF export.</p>
+    </footer>
+
+</body>
+</html>

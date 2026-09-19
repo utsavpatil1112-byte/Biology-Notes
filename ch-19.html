@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 19: Chemical Coordination and Integration - Master Notes</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bio: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                            dark: '#022c22'
+                        },
+                        tealish: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a'
+                        },
+                        amberish: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            500: '#f59e0b',
+                            700: '#b45309',
+                            800: '#92400e'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Landscape PDF Optimized Print Settings */
+        @page {
+            size: A4 landscape;
+            margin: 8mm;
+        }
+
+        @media print {
+            body {
+                background: white !important;
+                color: #0f172a !important;
+                font-size: 11px !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            .avoid-break {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+            .shadow-custom, .shadow-md, .shadow-lg {
+                box-shadow: none !important;
+                border: 1px solid #cbd5e1 !important;
+            }
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.45;
+        }
+
+        /* Custom Card Depth & Borders */
+        .bio-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+            transition: all 0.2s ease;
+        }
+        
+        .bio-card:hover {
+            box-shadow: 0 4px 12px rgba(15, 118, 110, 0.08);
+            border-color: #cbd5e1;
+        }
+
+        /* Academic Table Styling */
+        table.academic-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            background: white;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            border: 1.5px solid #0f766e;
+        }
+
+        table.academic-table th {
+            background-color: #0f766e;
+            color: #ffffff;
+            font-weight: 700;
+            padding: 8px 12px;
+            text-align: left;
+            border: 1px solid #0d9488;
+        }
+
+        table.academic-table td {
+            padding: 7px 10px;
+            border: 1px solid #cbd5e1;
+            vertical-align: top;
+        }
+
+        table.academic-table tr:nth-child(even) {
+            background-color: #f0fdfa;
+        }
+
+        /* Custom Scrollbar for dynamic landscape preview */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0f766e;
+            border-radius: 4px;
+        }
+
+        /* Badge and Pills */
+        .tag-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 2px 8px;
+            border-radius: 9999px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+<body class="p-2 sm:p-4 md:p-6 text-slate-800">
+
+    <!-- Top Action Bar (No-Print) -->
+    <div class="no-print max-w-7xl mx-auto mb-4 flex justify-between items-center bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
+        <div class="flex items-center space-x-3">
+            <span class="bg-emerald-700 text-white p-2 rounded-lg font-bold text-xs"><i class="fa-solid fa-book-open"></i> NCERT Class 11</span>
+            <h1 class="font-bold text-slate-800 text-sm sm:text-base">Chapter 19: Chemical Coordination and Integration</h1>
+        </div>
+        <div class="flex items-center space-x-2">
+            <button onclick="window.print()" class="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-4 py-2 rounded-lg text-sm transition flex items-center gap-2 shadow-sm">
+                <i class="fa-solid fa-print"></i> Print / Save as PDF
+            </button>
+        </div>
+    </div>
+
+    <!-- MAIN LANDSCAPE CONTAINER -->
+    <main class="max-w-[1400px] mx-auto space-y-6">
+
+        <!-- CHAPTER HEADER BANNER -->
+        <header class="bg-gradient-to-r from-bio-dark via-bio-900 to-tealish-900 text-white rounded-2xl p-6 shadow-md relative overflow-hidden">
+            <div class="absolute right-0 top-0 opacity-10 transform translate-x-8 -translate-y-4">
+                <i class="fa-solid fa-dna text-[180px]"></i>
+            </div>
+            <div class="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                    <div class="flex items-center space-x-2 mb-2">
+                        <span class="bg-emerald-500/30 text-emerald-200 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-400/30">CLASS XI BIOLOGY</span>
+                        <span class="bg-teal-500/30 text-teal-200 text-xs px-3 py-1 rounded-full font-semibold border border-teal-400/30">HUMAN PHYSIOLOGY</span>
+                        <span class="bg-amber-500/30 text-amber-200 text-xs px-3 py-1 rounded-full font-semibold border border-amber-400/30">NCERT PAGES 240–251</span>
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight font-serif text-emerald-100">
+                        CHAPTER 19: CHEMICAL COORDINATION AND INTEGRATION
+                    </h1>
+                    <p class="text-emerald-200/90 text-xs sm:text-sm mt-1 max-w-3xl">
+                        Complete exam-oriented comprehensive study guide covering endocrine glands, hormonal regulation, target tissues, feedback loops, and molecular mechanisms of action.
+                    </p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-3 rounded-xl border border-white/20 text-center min-w-[160px]">
+                    <span class="block text-xs text-emerald-200 uppercase tracking-widest font-bold">Document Type</span>
+                    <span class="text-lg font-bold text-white">Master Notes</span>
+                    <span class="block text-[10px] text-emerald-300 mt-0.5">100% NCERT Preserved</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- TOP ROW: TABLE OF CONTENTS & CHAPTER MIND MAP -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+            
+            <!-- Table of Contents Card -->
+            <div class="lg:col-span-4 bio-card p-4 border-l-4 border-l-emerald-600 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center space-x-2 mb-3 border-b border-slate-100 pb-2">
+                        <i class="fa-solid fa-[#0f766e] fa-list-ol text-emerald-700"></i>
+                        <h2 class="font-bold text-slate-800 text-base">Table of Contents</h2>
+                    </div>
+                    <ul class="text-xs space-y-2 text-slate-600 font-medium">
+                        <li class="flex items-center justify-between p-1.5 rounded-lg bg-emerald-50/50 hover:bg-emerald-50">
+                            <span><strong class="text-emerald-800">19.1</strong> Endocrine Glands & Hormones</span>
+                            <span class="text-[10px] bg-emerald-200 text-emerald-800 px-2 py-0.5 rounded">p. 240</span>
+                        </li>
+                        <li class="flex items-center justify-between p-1.5 rounded-lg bg-emerald-50/50 hover:bg-emerald-50">
+                            <span><strong class="text-emerald-800">19.2</strong> Human Endocrine System & Glands</span>
+                            <span class="text-[10px] bg-emerald-200 text-emerald-800 px-2 py-0.5 rounded">pp. 240-247</span>
+                        </li>
+                        <li class="flex items-center justify-between p-1.5 rounded-lg bg-emerald-50/50 hover:bg-emerald-50">
+                            <span><strong class="text-emerald-800">19.3</strong> Hormones of Heart, Kidney & GI Tract</span>
+                            <span class="text-[10px] bg-emerald-200 text-emerald-800 px-2 py-0.5 rounded">p. 247</span>
+                        </li>
+                        <li class="flex items-center justify-between p-1.5 rounded-lg bg-emerald-50/50 hover:bg-emerald-50">
+                            <span><strong class="text-emerald-800">19.4</strong> Mechanism of Hormone Action</span>
+                            <span class="text-[10px] bg-emerald-200 text-emerald-800 px-2 py-0.5 rounded">pp. 247-249</span>
+                        </li>
+                        <li class="flex items-center justify-between p-1.5 rounded-lg bg-amber-50 hover:bg-amber-100/60">
+                            <span><strong class="text-amber-800">★</strong> Chapter Summary & Exam Revision</span>
+                            <span class="text-[10px] bg-amber-200 text-amber-900 px-2 py-0.5 rounded">pp. 249-251</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+                    <span><i class="fa-solid fa-circle-info text-teal-600 mr-1"></i> Formatted for A4 Landscape</span>
+                    <span class="font-bold text-emerald-800">3-Color Theme</span>
+                </div>
+            </div>
+
+            <!-- Visual Mind Map Box -->
+            <div class="lg:col-span-8 bio-card p-4 border-t-4 border-t-tealish-700 bg-gradient-to-br from-white to-tealish-50/30">
+                <div class="flex items-center justify-between mb-3 border-b border-slate-200 pb-2">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-brain text-tealish-700 text-lg"></i>
+                        <h2 class="font-bold text-slate-800 text-base">🧠 CHAPTER MIND MAP — ENDOCRINE SYSTEM AT A GLANCE</h2>
+                    </div>
+                    <span class="text-[10px] font-bold bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full uppercase">Hierarchical Structure</span>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+                    <!-- Branch 1 -->
+                    <div class="bg-emerald-50 p-3 rounded-lg border border-emerald-200">
+                        <div class="font-bold text-emerald-900 border-b border-emerald-300 pb-1 mb-2 flex items-center justify-between">
+                            <span>1. Master Control</span>
+                            <i class="fa-solid fa-sitemap text-emerald-600"></i>
+                        </div>
+                        <ul class="space-y-1 text-slate-700 text-[11px]">
+                            <li>• <strong>Hypothalamus:</strong> Basal diencephalon, Releasing & Inhibiting factors.</li>
+                            <li>• <strong>Pituitary:</strong> Adenohypophysis (Pars distalis & intermedia) + Neurohypophysis.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Branch 2 -->
+                    <div class="bg-teal-50 p-3 rounded-lg border border-teal-200">
+                        <div class="font-bold text-teal-900 border-b border-teal-300 pb-1 mb-2 flex items-center justify-between">
+                            <span>2. Metabolic Glands</span>
+                            <i class="fa-solid fa-bolt text-teal-600"></i>
+                        </div>
+                        <ul class="space-y-1 text-slate-700 text-[11px]">
+                            <li>• <strong>Thyroid:</strong> T<sub>3</sub>, T<sub>4</sub>, Thyrocalcitonin (TCT), BMR regulation.</li>
+                            <li>• <strong>Parathyroid:</strong> PTH (Hypercalcemic balance).</li>
+                            <li>• <strong>Pineal:</strong> Melatonin (Diurnal rhythms).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Branch 3 -->
+                    <div class="bg-blue-50 p-3 rounded-lg border border-blue-200">
+                        <div class="font-bold text-blue-900 border-b border-blue-300 pb-1 mb-2 flex items-center justify-between">
+                            <span>3. Abdominal / Gonadal</span>
+                            <i class="fa-solid fa-shield-halved text-blue-600"></i>
+                        </div>
+                        <ul class="space-y-1 text-slate-700 text-[11px]">
+                            <li>• <strong>Adrenal:</strong> Cortex (Corticoids) + Medulla (Catecholamines - 3F).</li>
+                            <li>• <strong>Pancreas:</strong> Insulin (β-cells) & Glucagon (α-cells).</li>
+                            <li>• <strong>Gonads:</strong> Testis (Androgens) & Ovary (Estrogen/Progesterone).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Branch 4 -->
+                    <div class="bg-amber-50 p-3 rounded-lg border border-amber-200">
+                        <div class="font-bold text-amber-900 border-b border-amber-300 pb-1 mb-2 flex items-center justify-between">
+                            <span>4. Non-Endocrine & Action</span>
+                            <i class="fa-solid fa-gears text-amber-600"></i>
+                        </div>
+                        <ul class="space-y-1 text-slate-700 text-[11px]">
+                            <li>• <strong>Heart/Kidney/GIT:</strong> ANF, Erythropoietin, Gastrin, CCK, Secretin, GIP.</li>
+                            <li>• <strong>Mechanism:</strong> Membrane receptors (2<sup>nd</sup> messengers) vs Intracellular (Genome).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 19.1: ENDOCRINE GLANDS & HORMONES -->
+        <section class="bio-card p-5 border-l-4 border-l-emerald-700">
+            <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center space-x-3">
+                    <span class="bg-emerald-700 text-white font-extrabold text-sm px-3 py-1 rounded-lg">19.1</span>
+                    <h2 class="text-lg font-bold text-slate-900">ENDOCRINE GLANDS AND HORMONES</h2>
+                </div>
+                <span class="tag-badge bg-emerald-100 text-emerald-800">NCERT Page 240</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                <!-- Concept Card 1: Neural vs Endocrine Integration -->
+                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-slate-800 text-sm mb-1.5 flex items-center gap-2">
+                        <i class="fa-solid fa-network-wired text-emerald-700"></i>
+                        Neural Coordination vs. Endocrine Coordination
+                    </h3>
+                    <p class="text-slate-600 mb-2">
+                        The neural system provides a <strong>point-to-point rapid coordination</strong> among organs. However, neural coordination is <em>fast but short-lived</em>. Nerve fibers do <strong>not innervate all cells</strong> of the body, and cellular functions require continuous regulation.
+                    </p>
+                    <div class="bg-emerald-100/70 p-2 rounded-lg text-emerald-900 font-semibold text-[11px]">
+                        <i class="fa-solid fa-check-circle mr-1"></i> Core Principle: The Neural System and Endocrine System <u>jointly coordinate and regulate</u> all physiological functions in the body.
+                    </div>
+                </div>
+
+                <!-- Concept Card 2: Endocrine Glands & Hormone Definition -->
+                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-slate-800 text-sm mb-1.5 flex items-center gap-2">
+                        <i class="fa-solid fa-flask text-tealish-700"></i>
+                        Endocrine Glands & Definition of Hormones
+                    </h3>
+                    <p class="text-slate-600">
+                        Endocrine glands <strong>lack ducts</strong> and are hence called <strong>ductless glands</strong>. Their secretions are poured directly into the bloodstream and carried to target organs.
+                    </p>
+
+                    <!-- Comparison Box inside Card -->
+                    <div class="grid grid-cols-2 gap-2 mt-2">
+                        <div class="bg-white p-2 rounded border border-slate-200">
+                            <span class="block font-bold text-slate-500 text-[10px] uppercase">Classical Definition</span>
+                            <p class="text-[11px] text-slate-700">Chemical produced by endocrine glands, released into blood, transported to distantly located target organs.</p>
+                        </div>
+                        <div class="bg-emerald-50 p-2 rounded border border-emerald-300">
+                            <span class="block font-bold text-emerald-800 text-[10px] uppercase">Current Scientific Definition</span>
+                            <p class="text-[11px] text-slate-800 font-medium">Hormones are <strong>non-nutrient chemicals</strong> which act as <strong>intercellular messengers</strong> and are produced in <strong>trace amounts</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Invertebrates vs Vertebrates Box -->
+            <div class="mt-3 bg-amber-50/80 p-3 rounded-xl border border-amber-200/80 text-xs flex items-center gap-3">
+                <div class="bg-amber-500 text-white p-2.5 rounded-lg text-sm">
+                    <i class="fa-solid fa-bug"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-amber-900 text-xs">Comparative Endocrinology Fact:</span>
+                    <p class="text-slate-700 text-[11px]">
+                        <strong>Invertebrates</strong> possess very simple endocrine systems with very few hormones. In contrast, <strong>Vertebrates</strong> possess a large number of chemicals acting as hormones to maintain complex homeostatic coordination.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 19.2: HUMAN ENDOCRINE SYSTEM -->
+        <section class="bio-card p-5 border-l-4 border-l-tealish-700">
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center space-x-3">
+                    <span class="bg-tealish-700 text-white font-extrabold text-sm px-3 py-1 rounded-lg">19.2</span>
+                    <h2 class="text-lg font-bold text-slate-900">HUMAN ENDOCRINE SYSTEM — ORGANIZED GLANDS & HYPOTHALAMUS</h2>
+                </div>
+                <span class="tag-badge bg-teal-100 text-teal-800">NCERT Pages 240–241</span>
+            </div>
+
+            <!-- Organised Endocrine Bodies Overview -->
+            <div class="mb-4 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                <span class="font-bold text-slate-800 text-xs block mb-1">Organised Endocrine Bodies in Humans:</span>
+                <div class="flex flex-wrap gap-2 text-xs">
+                    <span class="px-2.5 py-1 bg-white rounded-md border border-slate-300 font-semibold text-slate-700"><i class="fa-solid fa-brain text-purple-600 mr-1"></i> Pituitary</span>
+                    <span class="px-2.5 py-1 bg-white rounded-md border border-slate-300 font-semibold text-slate-700"><i class="fa-solid fa-circle-dot text-indigo-600 mr-1"></i> Pineal</span>
+                    <span class="px-2.5 py-1 bg-white rounded-md border border-slate-300 font-semibold text-slate-700"><i class="fa-solid fa-shield-virus text-emerald-600 mr-1"></i> Thyroid</span>
+                    <span class="px-2.5 py-1 bg-white rounded-md border border-slate-300 font-semibold text-slate-700"><i class="fa-solid fa-cubes text-teal-600 mr-1"></i> Parathyroid</span>
+                    <span class="px-2.5 py-1 bg-white rounded-md border border-slate-300 font-semibold text-slate-700"><i class="fa-solid fa-[#15803d] fa-heart-pulse text-red-600 mr-1"></i> Thymus</span>
+                    <span class="px-2.5 py-1 bg-white rounded-md border border-slate-300 font-semibold text-slate-700"><i class="fa-solid fa-square-plus text-amber-600 mr-1"></i> Adrenal</span>
+                    <span class="px-2.5 py-1 bg-white rounded-md border border-slate-300 font-semibold text-slate-700"><i class="fa-solid fa-disease text-yellow-600 mr-1"></i> Pancreas</span>
+                    <span class="px-2.5 py-1 bg-white rounded-md border border-slate-300 font-semibold text-slate-700"><i class="fa-solid fa-venus-mars text-rose-600 mr-1"></i> Gonads (Testis & Ovary)</span>
+                </div>
+                <p class="text-[11px] text-slate-500 mt-2"><em>Note: Diffused hormone-producing tissues are also located in Gastrointestinal tract, Liver, Kidney, and Heart.</em></p>
+            </div>
+
+            <!-- 19.2.1 HYPOTHALAMUS DETAIL -->
+            <div class="bg-gradient-to-r from-teal-50/80 to-emerald-50/80 p-4 rounded-xl border border-teal-200">
+                <div class="flex items-center justify-between border-b border-teal-200 pb-2 mb-3">
+                    <h3 class="font-bold text-teal-900 text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-sliders text-teal-700"></i>
+                        19.2.1 The Hypothalamus
+                    </h3>
+                    <span class="text-[10px] bg-teal-200 text-teal-900 font-bold px-2 py-0.5 rounded">Basal Forebrain</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+                    <!-- Anatomical Location & Nuclei -->
+                    <div class="bg-white p-3 rounded-lg border border-teal-100">
+                        <span class="font-bold text-slate-800 block mb-1">Anatomical Location & Structure</span>
+                        <ul class="space-y-1 text-slate-600 text-[11px]">
+                            <li>• Forms the <strong>basal part of diencephalon</strong> (forebrain).</li>
+                            <li>• Contains groups of neurosecretory cells called <strong>nuclei</strong>.</li>
+                            <li>• Nuclei synthesize and secrete hypothalamic hormones regulating the pituitary gland.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Types of Hormones Produced -->
+                    <div class="bg-white p-3 rounded-lg border border-teal-100">
+                        <span class="font-bold text-slate-800 block mb-1">Types of Hypothalamic Hormones</span>
+                        <div class="space-y-2 text-[11px]">
+                            <div class="p-1.5 rounded bg-emerald-50 border border-emerald-200">
+                                <strong class="text-emerald-900">1. Releasing Hormones:</strong> Stimulate pituitary secretions.
+                                <br><span class="text-slate-600"><em>Example:</em> <strong>GnRH</strong> (Gonadotrophin Releasing Hormone) → stimulates pituitary synthesis & release of gonadotrophins.</span>
+                            </div>
+                            <div class="p-1.5 rounded bg-rose-50 border border-rose-200">
+                                <strong class="text-rose-900">2. Inhibiting Hormones:</strong> Inhibit pituitary secretions.
+                                <br><span class="text-slate-600"><em>Example:</em> <strong>Somatostatin</strong> → inhibits release of Growth Hormone (GH) from pituitary.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Regulation Routes -->
+                    <div class="bg-white p-3 rounded-lg border border-teal-100">
+                        <span class="font-bold text-slate-800 block mb-1">Dual Neural & Vascular Regulation Route</span>
+                        <div class="space-y-1 text-slate-600 text-[11px]">
+                            <p><strong>Anterior Pituitary:</strong> Hypothalamic neurons → axonal endings → <strong>Portal Circulatory System</strong> → regulates anterior pituitary.</p>
+                            <p class="mt-2"><strong>Posterior Pituitary:</strong> Under <strong>direct neural regulation</strong> of hypothalamus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memory Trick Box -->
+                <div class="mt-3 bg-amber-100/80 p-2.5 rounded-lg border border-amber-300 flex items-center gap-2 text-xs">
+                    <span class="font-bold text-amber-900 flex items-center gap-1 shrink-0"><i class="fa-solid fa-lightbulb"></i> 🧠 Easy Way to Remember Route:</span>
+                    <span class="text-amber-900 text-[11px]"><strong>"Anterior Portal, Posterior Neural"</strong> — Anterior Pituitary is controlled via blood (Portal Circulation), while Posterior Pituitary is directly wired via Axons (Neural Control).</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 19.2.2: PITUITARY GLAND & DISORDERS -->
+        <section class="bio-card p-5 border-l-4 border-l-emerald-600">
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center space-x-3">
+                    <span class="bg-emerald-600 text-white font-extrabold text-sm px-3 py-1 rounded-lg">19.2.2</span>
+                    <h2 class="text-lg font-bold text-slate-900">THE PITUITARY GLAND (HYPOPHYSIS) & CLINICAL DISORDERS</h2>
+                </div>
+                <span class="tag-badge bg-emerald-100 text-emerald-800">NCERT Pages 241–242</span>
+            </div>
+
+            <!-- Anatomical Division Box -->
+            <div class="mb-4 bg-slate-50 p-3 rounded-xl border border-slate-200 text-xs">
+                <div class="flex items-center space-x-2 mb-2">
+                    <i class="fa-solid fa-cubes text-emerald-700"></i>
+                    <strong class="text-slate-800 text-sm">Anatomical Location & Anatomical Divisions</strong>
+                </div>
+                <p class="text-slate-600 mb-2">
+                    Located in a bony cavity called <strong>sella tursica</strong> of the sphenoid bone and attached to the hypothalamus by a <strong>stalk</strong> (Infundibulum).
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div class="bg-white p-2.5 rounded-lg border border-emerald-300">
+                        <strong class="text-emerald-900 block mb-1">1. Adenohypophysis</strong>
+                        <ul class="text-[11px] text-slate-700 space-y-1">
+                            <li>• <strong>Pars Distalis (Anterior Pituitary):</strong> Secretes GH, PRL, TSH, ACTH, LH, and FSH.</li>
+                            <li>• <strong>Pars Intermedia:</strong> Secretes MSH (Melanocyte Stimulating Hormone). <em>Note: In humans, pars intermedia is almost merged with pars distalis.</em></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-2.5 rounded-lg border border-teal-300">
+                        <strong class="text-teal-900 block mb-1">2. Neurohypophysis (Pars Nervosa / Posterior Pituitary)</strong>
+                        <ul class="text-[11px] text-slate-700 space-y-1">
+                            <li>• <strong>Stores and releases 2 hormones:</strong> Oxytocin and Vasopressin (ADH).</li>
+                            <li>• <em>Crucial Fact:</em> These hormones are <strong>synthesized by the Hypothalamus</strong> and transported axonally to neurohypophysis!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACADEMIC TABLE OF PITUITARY HORMONES & FUNCTIONS -->
+            <div class="overflow-x-auto">
+                <table class="academic-table">
+                    <thead>
+                        <tr>
+                            <th class="w-1/6">Hormone Name</th>
+                            <th class="w-1/6">Source Region</th>
+                            <th class="w-2/6">Primary Biological Function / Mechanism</th>
+                            <th class="w-2/6">Associated Clinical Disorder / Condition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Growth Hormone (GH)</strong></td>
+                            <td>Pars Distalis</td>
+                            <td>Stimulates overall body growth, protein synthesis, tissue repair, and cell elongation.</td>
+                            <td>
+                                • <strong>Hypersecretion (Children):</strong> Gigantism.<br>
+                                • <strong>Hyposecretion (Children):</strong> Pituitary Dwarfism.<br>
+                                • <strong>Hypersecretion (Adults/Middle Age):</strong> <strong class="text-rose-700">Acromegaly</strong> (Severe facial disfigurement, premature death if unchecked).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Prolactin (PRL)</strong></td>
+                            <td>Pars Distalis</td>
+                            <td>Regulates growth of mammary glands and formation of milk in them.</td>
+                            <td>Disruption leads to inadequate milk production post-parturition.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Thyroid Stimulating Hormone (TSH)</strong></td>
+                            <td>Pars Distalis</td>
+                            <td>Stimulates synthesis and secretion of thyroid hormones (T<sub>3</sub>, T<sub>4</sub>) from thyroid gland.</td>
+                            <td>Secondary Hypothyroidism or Hyperthyroidism.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Adrenocorticotrophic Hormone (ACTH)</strong></td>
+                            <td>Pars Distalis</td>
+                            <td>Stimulates synthesis and secretion of steroid hormones called <strong>glucocorticoids</strong> from adrenal cortex.</td>
+                            <td>Altered carbohydrate metabolism and steroid imbalances.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Luteinizing Hormone (LH)</strong></td>
+                            <td>Pars Distalis (Gonadotrophin)</td>
+                            <td>
+                                • <strong>Males:</strong> Stimulates synthesis and secretion of <strong>androgens</strong> from Leydig cells.<br>
+                                • <strong>Females:</strong> Induces <strong>ovulation</strong> of Graafian follicles and maintains <strong>corpus luteum</strong>.
+                            </td>
+                            <td>Gonadal dysfunction & infertility.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Follicle Stimulating Hormone (FSH)</strong></td>
+                            <td>Pars Distalis (Gonadotrophin)</td>
+                            <td>
+                                • <strong>Males:</strong> Regulates spermatogenesis along with androgens.<br>
+                                • <strong>Females:</strong> Stimulates growth and development of ovarian follicles.
+                            </td>
+                            <td>Impaired gametogenesis.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Melanocyte Stimulating Hormone (MSH)</strong></td>
+                            <td>Pars Intermedia</td>
+                            <td>Acts on <strong>melanocytes</strong> (melanin-containing cells) and regulates skin pigmentation.</td>
+                            <td>Pigmentation abnormalities.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Oxytocin</strong></td>
+                            <td>Neurohypophysis (Hypothalamic origin)</td>
+                            <td>Acts on smooth muscles; causes vigorous <strong>uterine contractions during childbirth</strong> and <strong>milk ejection</strong> from mammary glands.</td>
+                            <td>Sluggish labor, delayed milk ejection.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Vasopressin / Anti-diuretic Hormone (ADH)</strong></td>
+                            <td>Neurohypophysis (Hypothalamic origin)</td>
+                            <td>Acts mainly at kidneys to stimulate <strong>resorption of water & electrolytes</strong> by distal tubules, reducing diuresis.</td>
+                            <td>
+                                <strong class="text-rose-700">Diabetes Insipidus:</strong> ADH deficiency leads to inability to conserve water, causing massive urine output, severe dehydration, and thirst.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Clinical Highlights Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3 text-xs">
+                <div class="bg-rose-50 p-3 rounded-xl border border-rose-200">
+                    <span class="font-bold text-rose-900 block mb-1"><i class="fa-solid fa-triangle-exclamation text-rose-600 mr-1"></i> Special Focus: Acromegaly</span>
+                    <p class="text-slate-700 text-[11px]">
+                        Excess GH secretion in adults (middle age) results in severe disfigurement (especially face). Hard to diagnose early, often undetected for years until external features change noticeably. Can cause serious complications and premature death.
+                    </p>
+                </div>
+                <div class="bg-amber-50 p-3 rounded-xl border border-amber-200">
+                    <span class="font-bold text-amber-900 block mb-1"><i class="fa-solid fa-vial text-amber-600 mr-1"></i> Special Focus: Diabetes Insipidus</span>
+                    <p class="text-slate-700 text-[11px]">
+                        Impairment affecting synthesis or release of ADH results in diminished ability of kidneys to conserve water → excessive water loss (Diuresis) and dehydration. <em>Do not confuse with Diabetes Mellitus!</em>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 19.2.3 & 19.2.4: PINEAL & THYROID GLANDS -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+            
+            <!-- 19.2.3 PINEAL GLAND -->
+            <div class="lg:col-span-4 bio-card p-4 border-t-4 border-t-purple-600 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-3 border-b border-slate-200 pb-2">
+                        <div class="flex items-center space-x-2">
+                            <span class="bg-purple-600 text-white font-bold text-xs px-2 py-0.5 rounded">19.2.3</span>
+                            <h3 class="font-bold text-slate-900 text-sm">THE PINEAL GLAND</h3>
+                        </div>
+                        <span class="text-[10px] bg-purple-100 text-purple-800 font-bold px-2 py-0.5 rounded">Page 242</span>
+                    </div>
+
+                    <div class="space-y-2 text-xs">
+                        <div class="bg-purple-50 p-2.5 rounded-lg border border-purple-200">
+                            <strong>Location:</strong> Dorsal side of forebrain.
+                        </div>
+                        <div class="bg-purple-50 p-2.5 rounded-lg border border-purple-200">
+                            <strong>Hormone Secreted:</strong> <span class="text-purple-900 font-bold">Melatonin</span>
+                        </div>
+                        <div class="bg-white p-2.5 rounded-lg border border-slate-200 text-[11px] text-slate-700">
+                            <strong class="text-slate-800 block mb-1">Functions of Melatonin:</strong>
+                            <ul class="space-y-1 list-disc list-inside">
+                                <li>Regulates <strong>24-hour (diurnal) rhythm</strong> of the body.</li>
+                                <li>Maintains <strong>sleep-wake cycle</strong> and <strong>body temperature</strong>.</li>
+                                <li>Influences <strong>metabolism</strong> and <strong>pigmentation</strong>.</li>
+                                <li>Influences <strong>menstrual cycle</strong> and <strong>defense capability</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-3 bg-purple-100/70 p-2 rounded text-[11px] text-purple-900 font-medium text-center">
+                    🧠 Memory Trick: <strong>Melatonin = Midnight Rhythm</strong> (Sleep-Wake Balance)
+                </div>
+            </div>
+
+            <!-- 19.2.4 THYROID GLAND -->
+            <div class="lg:col-span-8 bio-card p-4 border-t-4 border-t-emerald-600">
+                <div class="flex items-center justify-between mb-3 border-b border-slate-200 pb-2">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-emerald-700 text-white font-bold text-xs px-2 py-0.5 rounded">19.2.4</span>
+                        <h3 class="font-bold text-slate-900 text-sm">THYROID GLAND & HORMONES</h3>
+                    </div>
+                    <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">NCERT Pages 242–243</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs mb-3">
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                        <strong class="text-slate-800 block mb-1">Anatomy & Histology</strong>
+                        <ul class="space-y-1 text-slate-600 text-[11px]">
+                            <li>• Composed of <strong>two lobes</strong> located on either side of the trachea.</li>
+                            <li>• Interconnected with a thin flap of connective tissue called <strong>Isthmus</strong>.</li>
+                            <li>• Composed of <strong>follicles</strong> and <strong>stromal tissues</strong>.</li>
+                            <li>• Follicular cells enclose a cavity and synthesize T<sub>4</sub> & T<sub>3</sub>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                        <strong class="text-slate-800 block mb-1">Hormones Synthesized</strong>
+                        <ul class="space-y-1 text-slate-700 text-[11px]">
+                            <li>1. <strong>Tetraiodothyronine (T<sub>4</sub>)</strong> / Thyroxine.</li>
+                            <li>2. <strong>Triiodothyronine (T<sub>3</sub>)</strong>.</li>
+                            <li>3. <strong>Thyrocalcitonin (TCT):</strong> Protein hormone regulating blood calcium levels (hypocalcemic).</li>
+                            <li class="text-emerald-800 font-semibold pt-1">• <em>Iodine is essential for normal rate of T<sub>3</sub> / T<sub>4</sub> synthesis!</em></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Disorders Comparison Table -->
+                <strong class="text-xs font-bold text-slate-800 mb-1 block">Thyroid Disorders Comparison:</strong>
+                <div class="overflow-x-auto">
+                    <table class="academic-table text-[11px]">
+                        <thead>
+                            <tr>
+                                <th>Condition</th>
+                                <th>Cause</th>
+                                <th>Clinical Features & Effects</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong class="text-amber-800">Hypothyroidism (Simple Goitre)</strong></td>
+                                <td>Deficiency of iodine in diet</td>
+                                <td>Enlargement of thyroid gland.</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="text-rose-800">Hypothyroidism during Pregnancy</strong></td>
+                                <td>Low thyroid levels in maternal body</td>
+                                <td>Defective development of growing baby leading to <strong>Cretinism</strong> (stunted growth, mental retardation, low IQ, abnormal skin, deaf-mutism).</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="text-amber-800">Hypothyroidism in Adult Women</strong></td>
+                                <td>Low hormonal secretion</td>
+                                <td>Irregular menstrual cycles.</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="text-rose-800">Hyperthyroidism / Graves' Disease</strong></td>
+                                <td>Thyroid cancer or development of thyroid nodules</td>
+                                <td><strong>Exophthalmic Goitre:</strong> Thyroid enlargement, protrusion of eyeballs, increased Basal Metabolic Rate (BMR), weight loss.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Physiological Functions Box -->
+                <div class="mt-2 bg-emerald-50 p-2.5 rounded-lg border border-emerald-200 text-[11px] text-emerald-950">
+                    <strong>Major Functions of Thyroid Hormones (T<sub>3</sub>, T<sub>4</sub>):</strong>
+                    <span class="text-slate-700"> (1) Regulation of Basal Metabolic Rate (BMR). (2) Support RBC formation (Erythropoiesis). (3) Control carbohydrate, protein & fat metabolism. (4) Maintain water and electrolyte balance.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 19.2.5 & 19.2.6: PARATHYROID, THYMUS & CALCIUM HOMEOSTASIS -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+            
+            <!-- 19.2.5 PARATHYROID GLAND -->
+            <div class="lg:col-span-7 bio-card p-4 border-t-4 border-t-amber-500">
+                <div class="flex items-center justify-between mb-3 border-b border-slate-200 pb-2">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-amber-600 text-white font-bold text-xs px-2 py-0.5 rounded">19.2.5</span>
+                        <h3 class="font-bold text-slate-900 text-sm">PARATHYROID GLAND & CALCIUM HOMEOSTASIS</h3>
+                    </div>
+                    <span class="text-[10px] bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded">NCERT Page 243</span>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs mb-3">
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                        <strong class="text-slate-800 block mb-1">Anatomy & Secretion</strong>
+                        <ul class="space-y-1 text-slate-600 text-[11px]">
+                            <li>• <strong>4 parathyroid glands</strong> present on back side of thyroid gland (1 pair per lobe).</li>
+                            <li>• Secretes peptide hormone: <strong class="text-amber-900">Parathyroid Hormone (PTH)</strong>.</li>
+                            <li>• Secretion regulated by circulating blood Ca<sup>2+</sup> levels.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-amber-50 p-2.5 rounded-lg border border-amber-200">
+                        <strong class="text-amber-900 block mb-1">PTH Mechanism (Hypercalcemic)</strong>
+                        <ul class="space-y-1 text-slate-700 text-[11px]">
+                            <li>• <strong>Increases blood Ca<sup>2+</sup> levels</strong> (Hypercalcemic hormone).</li>
+                            <li>• Stimulates <strong>bone resorption</strong> (dissolution/demineralisation).</li>
+                            <li>• Stimulates Ca<sup>2+</sup> reabsorption by renal tubules.</li>
+                            <li>• Increases Ca<sup>2+</sup> absorption from digested food.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Equation/Balance Box -->
+                <div class="bg-white p-3 rounded-lg border-2 border-dashed border-amber-400 text-xs text-center">
+                    <span class="font-bold text-amber-900 block mb-1 uppercase tracking-wider text-[10px]">⚖️ Antagonistic Blood Ca<sup>2+</sup> Regulation Equation</span>
+                    <div class="flex items-center justify-center space-x-4 font-mono font-bold text-slate-800 text-xs sm:text-sm">
+                        <div class="bg-rose-100 text-rose-800 px-3 py-1 rounded border border-rose-300">
+                            PTH (Parathyroid)<br><span class="text-[10px] font-sans text-rose-600">Raises Blood Ca<sup>2+</sup></span>
+                        </div>
+                        <span class="text-xl text-slate-400">⚡</span>
+                        <div class="bg-teal-100 text-teal-800 px-3 py-1 rounded border border-teal-300">
+                            TCT (Thyrocalcitonin)<br><span class="text-[10px] font-sans text-teal-600">Lowers Blood Ca<sup>2+</sup></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 19.2.6 THYMUS GLAND -->
+            <div class="lg:col-span-5 bio-card p-4 border-t-4 border-t-teal-600 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-3 border-b border-slate-200 pb-2">
+                        <div class="flex items-center space-x-2">
+                            <span class="bg-teal-700 text-white font-bold text-xs px-2 py-0.5 rounded">19.2.6</span>
+                            <h3 class="font-bold text-slate-900 text-sm">THE THYMUS GLAND</h3>
+                        </div>
+                        <span class="text-[10px] bg-teal-100 text-teal-800 font-bold px-2 py-0.5 rounded">NCERT Page 243</span>
+                    </div>
+
+                    <div class="space-y-2 text-xs">
+                        <div class="bg-teal-50 p-2.5 rounded-lg border border-teal-200">
+                            <strong>Location:</strong> Lobular structure located between lungs behind sternum on ventral side of aorta.
+                        </div>
+                        <div class="bg-teal-50 p-2.5 rounded-lg border border-teal-200">
+                            <strong>Hormone Secreted:</strong> <span class="text-teal-900 font-bold">Thymosins</span> (Peptide hormones).
+                        </div>
+                        <div class="bg-white p-2.5 rounded-lg border border-slate-200 text-[11px] text-slate-700">
+                            <strong class="text-slate-800 block mb-1">Dual Immune Roles:</strong>
+                            <p>1. <strong>Cell-Mediated Immunity:</strong> Promotes differentiation of <strong>T-lymphocytes</strong>.</p>
+                            <p class="mt-1">2. <strong>Humoral Immunity:</strong> Promotes production of <strong>antibodies</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-3 bg-rose-50 p-2.5 rounded-lg border border-rose-200 text-xs text-rose-900">
+                    <strong>⚠️ Age-Related Degeneration Fact:</strong>
+                    <p class="text-[11px] text-slate-700 mt-0.5">Thymus degenerates in old individuals → decreased production of thymosins → immune responses of old persons become weak.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 19.2.7: ADRENAL GLAND -->
+        <section class="bio-card p-5 border-l-4 border-l-amber-600">
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center space-x-3">
+                    <span class="bg-amber-600 text-white font-extrabold text-sm px-3 py-1 rounded-lg">19.2.7</span>
+                    <h2 class="text-lg font-bold text-slate-900">THE ADRENAL GLAND — CORTEX & MEDULLA</h2>
+                </div>
+                <span class="tag-badge bg-amber-100 text-amber-900">NCERT Pages 244–245</span>
+            </div>
+
+            <p class="text-xs text-slate-600 mb-3">
+                One pair of adrenal glands, located anteriorly above each kidney. Composed of two distinct tissue zones: Central <strong>Adrenal Medulla</strong> and Outer <strong>Adrenal Cortex</strong>.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                
+                <!-- ADRENAL MEDULLA CARD -->
+                <div class="bg-gradient-to-br from-amber-50 to-orange-50 p-4 rounded-xl border border-amber-200">
+                    <div class="flex items-center justify-between border-b border-amber-200 pb-2 mb-2">
+                        <h3 class="font-bold text-amber-900 text-sm flex items-center gap-2">
+                            <i class="fa-solid fa-bolt text-amber-600"></i>
+                            Adrenal Medulla (Inner Zone)
+                        </h3>
+                        <span class="bg-amber-200 text-amber-900 text-[10px] font-bold px-2 py-0.5 rounded">Emergency / 3F Gland</span>
+                    </div>
+
+                    <div class="space-y-2 text-[11px] text-slate-700">
+                        <p><strong>Hormones Secreted:</strong> <em>Adrenaline (Epinephrine)</em> and <em>Noradrenaline (Norepinephrine)</em>. Commonly called <strong class="text-amber-900">Catecholamines</strong>.</p>
+                        
+                        <div class="bg-white p-2.5 rounded-lg border border-amber-200">
+                            <strong class="text-amber-900 block mb-1">Emergency Responses ("Fight or Flight"):</strong>
+                            <ul class="space-y-1 list-disc list-inside text-slate-700">
+                                <li>Increases alertness, pupillary dilation, piloerection (raising of hair), and sweating.</li>
+                                <li>Increases heart rate, strength of heart contraction, and rate of respiration.</li>
+                                <li>Stimulates breakdown of glycogen ($\rightarrow$ increased blood glucose).</li>
+                                <li>Stimulates breakdown of lipids and proteins.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ADRENAL CORTEX CARD -->
+                <div class="bg-gradient-to-br from-emerald-50 to-teal-50 p-4 rounded-xl border border-emerald-200">
+                    <div class="flex items-center justify-between border-b border-emerald-200 pb-2 mb-2">
+                        <h3 class="font-bold text-emerald-900 text-sm flex items-center gap-2">
+                            <i class="fa-solid fa-layer-group text-emerald-600"></i>
+                            Adrenal Cortex (Outer Zone)
+                        </h3>
+                        <span class="bg-emerald-200 text-emerald-900 text-[10px] font-bold px-2 py-0.5 rounded">3 Steroid Layers</span>
+                    </div>
+
+                    <div class="space-y-2 text-[11px] text-slate-700">
+                        <div class="bg-white p-2 rounded border border-emerald-200 font-mono text-[10px]">
+                            <strong>Layers (Outside to Inside):</strong><br>
+                            Zona Glomerulosa (Outer) → Zona Fasciculata (Middle) → Zona Reticularis (Inner)
+                        </div>
+
+                        <div class="space-y-1.5">
+                            <div class="p-1.5 bg-white rounded border border-slate-200">
+                                <strong class="text-emerald-900">1. Glucocorticoids (Main: Cortisol):</strong>
+                                <br>• Stimulates gluconeogenesis, lipolysis, proteolysis.
+                                <br>• Inhibits cellular uptake and utilization of amino acids.
+                                <br>• Maintains cardiovascular & kidney functions.
+                                <br>• Produces <strong>anti-inflammatory reactions</strong> & suppresses immune response.
+                                <br>• Stimulates RBC production.
+                            </div>
+                            <div class="p-1.5 bg-white rounded border border-slate-200">
+                                <strong class="text-teal-900">2. Mineralocorticoids (Main: Aldosterone):</strong>
+                                <br>• Acts at renal tubules: Reabsorption of Na<sup>+</sup> & water; excretion of K<sup>+</sup> & phosphate ions.
+                                <br>• Maintains electrolytes, body fluid volume, osmotic & blood pressure.
+                            </div>
+                            <div class="p-1.5 bg-white rounded border border-slate-200">
+                                <strong class="text-slate-800">3. Androgenic Steroids:</strong> Secretes small amounts; plays role in growth of axial, pubic & facial hair during puberty.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Addison's Disease Alert Box -->
+            <div class="mt-3 bg-rose-50 p-3 rounded-xl border border-rose-200 text-xs flex items-center gap-3">
+                <div class="bg-rose-600 text-white p-2.5 rounded-lg text-sm shrink-0">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-rose-900">Clinical Disease Focus: Addison's Disease</span>
+                    <p class="text-slate-700 text-[11px]">
+                        <strong>Underproduction of hormones by the adrenal cortex</strong> alters carbohydrate metabolism causing acute weakness and fatigue leading to <strong>Addison's Disease</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 19.2.8: PANCREAS & GLUCOSE REGULATION -->
+        <section class="bio-card p-5 border-l-4 border-l-yellow-500">
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center space-x-3">
+                    <span class="bg-yellow-600 text-white font-extrabold text-sm px-3 py-1 rounded-lg">19.2.8</span>
+                    <h2 class="text-lg font-bold text-slate-900">PANCREAS — COMPOSITE GLAND & GLUCOSE HOMEOSTASIS</h2>
+                </div>
+                <span class="tag-badge bg-yellow-100 text-yellow-900">NCERT Pages 245–246</span>
+            </div>
+
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 text-xs mb-3">
+                <p class="text-slate-700">
+                    Pancreas is a <strong>composite (heterocrine/amphicrine) gland</strong> acting as both exocrine and endocrine gland. Endocrine portion consists of <strong>Islets of Langerhans</strong> (1 to 2 million islets, representing only 1–2% of total pancreatic tissue).
+                </p>
+            </div>
+
+            <!-- Dual Islet Cell Comparison Table -->
+            <div class="overflow-x-auto">
+                <table class="academic-table">
+                    <thead>
+                        <tr>
+                            <th class="w-1/6">Cell Type</th>
+                            <th class="w-1/6">Hormone Secreted</th>
+                            <th class="w-2/6">Primary Target Cells & Metabolic Actions</th>
+                            <th class="w-2/6">Overall Effect on Blood Glucose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong class="text-rose-800">α-cells (Alpha cells)</strong></td>
+                            <td><strong>Glucagon</strong> (Peptide hormone)</td>
+                            <td>
+                                • Acts on <strong>Hepatocytes</strong> (liver cells).<br>
+                                • Stimulates <strong>Glycogenolysis</strong> (breakdown of glycogen to glucose).<br>
+                                • Stimulates <strong>Gluconeogenesis</strong>.<br>
+                                • Reduces cellular glucose uptake and utilization.
+                            </td>
+                            <td>
+                                <strong class="text-rose-700 uppercase">Hyperglycemic Hormone</strong><br>
+                                (Increases blood glucose level)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong class="text-emerald-800">β-cells (Beta cells)</strong></td>
+                            <td><strong>Insulin</strong> (Peptide hormone)</td>
+                            <td>
+                                • Acts on <strong>Hepatocytes</strong> and <strong>Adipocytes</strong>.<br>
+                                • Enhances cellular glucose uptake and utilization.<br>
+                                • Rapid movement of glucose from blood to target cells.<br>
+                                • Stimulates <strong>Glycogenesis</strong> (conversion of glucose to glycogen).
+                            </td>
+                            <td>
+                                <strong class="text-emerald-700 uppercase">Hypoglycemic Hormone</strong><br>
+                                (Decreases blood glucose level)
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Glucose Homeostasis Biochemical Equation Box -->
+            <div class="mt-3 grid grid-cols-1 md:grid-cols-12 gap-3 text-xs">
+                <div class="md:col-span-7 bg-amber-50/80 p-3 rounded-xl border border-amber-200">
+                    <strong class="text-amber-900 block mb-1"><i class="fa-solid fa-arrows-spin mr-1"></i> Dual Feedback Balance Equation</strong>
+                    <div class="font-sans text-[11px] bg-white p-2.5 rounded border border-amber-300 text-slate-800 space-y-1">
+                        <div>High Blood Glucose <span class="font-bold text-emerald-700">→ [Insulin (β-cells)] →</span> Glycogenesis → Normal Blood Glucose</div>
+                        <div>Low Blood Glucose <span class="font-bold text-rose-700">→ [Glucagon (α-cells)] →</span> Glycogenolysis → Normal Blood Glucose</div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-5 bg-rose-50 p-3 rounded-xl border border-rose-200">
+                    <strong class="text-rose-900 block mb-1"><i class="fa-solid fa-notes-medical mr-1"></i> Clinical Disorder: Diabetes Mellitus</strong>
+                    <p class="text-slate-700 text-[11px]">
+                        Prolonged hyperglycemia leads to <strong>Diabetes Mellitus</strong>, associated with loss of glucose through urine (glucosuria) and formation of harmful compounds called <strong>ketone bodies</strong> (ketonuria). Treated with <em>insulin therapy</em>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 19.2.9 & 19.2.10: GONADS (TESTIS & OVARY) -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            
+            <!-- 19.2.9 TESTIS -->
+            <div class="bio-card p-4 border-t-4 border-t-blue-600">
+                <div class="flex items-center justify-between mb-3 border-b border-slate-200 pb-2">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-blue-600 text-white font-bold text-xs px-2 py-0.5 rounded">19.2.9</span>
+                        <h3 class="font-bold text-slate-900 text-sm">TESTIS (MALE GONAD)</h3>
+                    </div>
+                    <span class="text-[10px] bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">NCERT Page 246</span>
+                </div>
+
+                <div class="space-y-2 text-xs">
+                    <p class="text-slate-600">
+                        Located in the scrotal sac (outside abdomen). Functions as primary sex organ and endocrine gland. Composed of seminiferous tubules and interstitial tissue.
+                    </p>
+
+                    <div class="bg-blue-50 p-2.5 rounded-lg border border-blue-200">
+                        <strong class="text-blue-900 block mb-1">Leydig / Interstitial Cells:</strong>
+                        <p class="text-slate-700 text-[11px]">Present in intertubular spaces; produce a group of hormones called <strong>Androgens</strong> (mainly <strong>Testosterone</strong>).</p>
+                    </div>
+
+                    <div class="bg-white p-2.5 rounded-lg border border-slate-200 text-[11px] text-slate-700">
+                        <strong class="text-slate-800 block mb-1">Functions of Androgens:</strong>
+                        <ul class="space-y-1 list-disc list-inside">
+                            <li>Regulate development, maturation, and functions of male accessory sex organs (epididymis, vas deferens, seminal vesicles, prostate, urethra).</li>
+                            <li>Stimulate muscular growth, facial & axillary hair, aggressiveness, low pitch voice.</li>
+                            <li>Stimulate <strong>Spermatogenesis</strong> (sperm formation).</li>
+                            <li>Act on CNS to influence male sexual behavior (<strong>libido</strong>).</li>
+                            <li>Produce <strong>anabolic (synthetic) effects</strong> on protein and carbohydrate metabolism.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 19.2.10 OVARY -->
+            <div class="bio-card p-4 border-t-4 border-t-rose-600">
+                <div class="flex items-center justify-between mb-3 border-b border-slate-200 pb-2">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-rose-600 text-white font-bold text-xs px-2 py-0.5 rounded">19.2.10</span>
+                        <h3 class="font-bold text-slate-900 text-sm">OVARY (FEMALE GONAD)</h3>
+                    </div>
+                    <span class="text-[10px] bg-rose-100 text-rose-800 font-bold px-2 py-0.5 rounded">NCERT Pages 246–247</span>
+                </div>
+
+                <div class="space-y-2 text-xs">
+                    <p class="text-slate-600">
+                        Pair of ovaries located in the abdomen. Primary female sex organ producing one ovum per menstrual cycle and two groups of steroid hormones: <strong>Estrogen</strong> and <strong>Progesterone</strong>.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px]">
+                        <div class="bg-rose-50 p-2.5 rounded-lg border border-rose-200">
+                            <strong class="text-rose-900 block mb-1">1. Estrogen</strong>
+                            <span class="text-slate-600 block mb-1"><em>Source:</em> Growing ovarian follicles.</span>
+                            <ul class="space-y-0.5 list-disc list-inside text-slate-700">
+                                <li>Growth of female secondary sex organs.</li>
+                                <li>Secondary sex characters (high pitch voice).</li>
+                                <li>Mammary gland development & female sexual behavior.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-pink-50 p-2.5 rounded-lg border border-pink-200">
+                            <strong class="text-pink-900 block mb-1">2. Progesterone</strong>
+                            <span class="text-slate-600 block mb-1"><em>Source:</em> <strong>Corpus Luteum</strong> (ruptured follicle remnant).</span>
+                            <ul class="space-y-0.5 list-disc list-inside text-slate-700">
+                                <li><strong>Supports Pregnancy</strong>.</li>
+                                <li>Acts on mammary glands to form <strong>alveoli</strong> (milk-storing sacs) and milk secretion.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 19.3: HORMONES OF HEART, KIDNEY AND GASTROINTESTINAL TRACT -->
+        <section class="bio-card p-5 border-l-4 border-l-teal-600">
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center space-x-3">
+                    <span class="bg-teal-600 text-white font-extrabold text-sm px-3 py-1 rounded-lg">19.3</span>
+                    <h2 class="text-lg font-bold text-slate-900">HORMONES OF HEART, KIDNEY AND GASTROINTESTINAL TRACT</h2>
+                </div>
+                <span class="tag-badge bg-teal-100 text-teal-800">NCERT Page 247</span>
+            </div>
+
+            <!-- Non-Endocrine Organ Hormones Table -->
+            <div class="overflow-x-auto">
+                <table class="academic-table">
+                    <thead>
+                        <tr>
+                            <th class="w-1/6">Organ / Tissue</th>
+                            <th class="w-1/6">Hormone Secreted</th>
+                            <th class="w-1/6">Chemical Nature</th>
+                            <th class="w-3/6">Specific Biological Function & Target Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Heart (Atrial Wall)</strong></td>
+                            <td><strong class="text-teal-900">Atrial Natriuretic Factor (ANF)</strong></td>
+                            <td>Peptide</td>
+                            <td>Causes <strong>dilation of blood vessels</strong> to <strong>decrease blood pressure</strong> when BP increases.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kidney (Juxtaglomerular / JG Cells)</strong></td>
+                            <td><strong class="text-emerald-900">Erythropoietin</strong></td>
+                            <td>Peptide</td>
+                            <td>Stimulates <strong>Erythropoiesis</strong> (formation of Red Blood Cells / RBCs).</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4"><strong>Gastrointestinal Tract (GIT)</strong></td>
+                            <td><strong>Gastrin</strong></td>
+                            <td>Peptide</td>
+                            <td>Acts on gastric glands → stimulates secretion of <strong>Hydrochloric Acid (HCl)</strong> and <strong>Pepsinogen</strong>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Secretin</strong></td>
+                            <td>Peptide</td>
+                            <td>Acts on exocrine pancreas → stimulates secretion of <strong>water and bicarbonate ions</strong>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cholecystokinin (CCK)</strong></td>
+                            <td>Peptide</td>
+                            <td>Acts on <strong>Pancreas</strong> (→ pancreatic enzymes) and <strong>Gall Bladder</strong> (→ bile juice).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gastric Inhibitory Peptide (GIP)</strong></td>
+                            <td>Peptide</td>
+                            <td><strong>Inhibits gastric secretion</strong> and motility.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Other Non-Endocrine Tissues</strong></td>
+                            <td><strong>Growth Factors</strong></td>
+                            <td>Peptide/Protein</td>
+                            <td>Essential for normal growth of tissues and their repairing/regeneration.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Quick Memory Trick Box for GIT Hormones -->
+            <div class="mt-2 bg-amber-100/90 p-2.5 rounded-lg border border-amber-300 text-xs flex items-center gap-2">
+                <span class="font-bold text-amber-900 shrink-0"><i class="fa-solid fa-brain"></i> 🧠 Easy Way to Remember GIT Secretions:</span>
+                <span class="text-amber-900 text-[11px]">
+                    <strong>"Gastrin = Acid | Secretin = Bicarbonate | CCK = Enzymes & Bile | GIP = Stop Acid"</strong>
+                </span>
+            </div>
+        </section>
+
+        <!-- SECTION 19.4: MECHANISM OF HORMONE ACTION -->
+        <section class="bio-card p-5 border-l-4 border-l-purple-700">
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center space-x-3">
+                    <span class="bg-purple-700 text-white font-extrabold text-sm px-3 py-1 rounded-lg">19.4</span>
+                    <h2 class="text-lg font-bold text-slate-900">MECHANISM OF HORMONE ACTION</h2>
+                </div>
+                <span class="tag-badge bg-purple-100 text-purple-800">NCERT Pages 247–249</span>
+            </div>
+
+            <!-- Chemical Classification Grid -->
+            <strong class="text-xs font-bold text-slate-800 block mb-2">4 Chemical Classes of Hormones (NCERT Classification):</strong>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 text-xs mb-4">
+                <div class="bg-white p-2.5 rounded-lg border border-slate-200 shadow-sm">
+                    <span class="font-bold text-purple-900 block mb-1">1. Peptide / Protein</span>
+                    <p class="text-[11px] text-slate-600">Insulin, Glucagon, Pituitary hormones, Hypothalamic hormones.</p>
+                </div>
+                <div class="bg-white p-2.5 rounded-lg border border-slate-200 shadow-sm">
+                    <span class="font-bold text-purple-900 block mb-1">2. Steroids</span>
+                    <p class="text-[11px] text-slate-600">Cortisol, Testosterone, Estradiol, Progesterone.</p>
+                </div>
+                <div class="bg-white p-2.5 rounded-lg border border-slate-200 shadow-sm">
+                    <span class="font-bold text-purple-900 block mb-1">3. Iodothyronines</span>
+                    <p class="text-[11px] text-slate-600">Thyroid hormones (T<sub>3</sub>, T<sub>4</sub>).</p>
+                </div>
+                <div class="bg-white p-2.5 rounded-lg border border-slate-200 shadow-sm">
+                    <span class="font-bold text-purple-900 block mb-1">4. Amino-acid Derivatives</span>
+                    <p class="text-[11px] text-slate-600">Epinephrine (Adrenaline).</p>
+                </div>
+            </div>
+
+            <!-- Dual Receptor Mechanism Comparison -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                
+                <!-- Mechanism A: Membrane-Bound Receptors -->
+                <div class="bg-purple-50/70 p-4 rounded-xl border border-purple-200">
+                    <div class="flex items-center justify-between border-b border-purple-200 pb-2 mb-2">
+                        <strong class="text-purple-900 text-sm font-bold">A. Water-Soluble / Protein Hormones</strong>
+                        <span class="bg-purple-200 text-purple-900 text-[10px] font-bold px-2 py-0.5 rounded">Membrane-Bound Receptor</span>
+                    </div>
+
+                    <div class="space-y-2 text-[11px] text-slate-700">
+                        <p>Hormones (e.g., <strong>FSH, LH, Insulin</strong>) interact with <strong>membrane-bound receptors</strong> on cell surface. They <strong>do NOT enter target cell</strong>.</p>
+
+                        <!-- Step Pathway Box -->
+                        <div class="bg-white p-2.5 rounded-lg border border-purple-200 font-sans text-[11px] space-y-1">
+                            <div>1. Hormone + Receptor → <strong>Hormone-Receptor Complex</strong></div>
+                            <div>2. Generates <strong>Response 1</strong></div>
+                            <div>3. Generates <strong>Second Messengers</strong> (Cyclic AMP, IP<sub>3</sub>, Ca<sup>2+</sup>)</div>
+                            <div>4. Biochemical responses → Physiological responses (e.g., ovarian growth).</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mechanism B: Intracellular Receptors -->
+                <div class="bg-emerald-50/70 p-4 rounded-xl border border-emerald-200">
+                    <div class="flex items-center justify-between border-b border-emerald-200 pb-2 mb-2">
+                        <strong class="text-emerald-900 text-sm font-bold">B. Lipid-Soluble / Steroid Hormones</strong>
+                        <span class="bg-emerald-200 text-emerald-900 text-[10px] font-bold px-2 py-0.5 rounded">Intracellular / Nuclear Receptor</span>
+                    </div>
+
+                    <div class="space-y-2 text-[11px] text-slate-700">
+                        <p>Hormones (e.g., <strong>Estrogen, Cortisol, Iodothyronines</strong>) cross membrane & bind to <strong>intracellular receptors</strong> (mostly nuclear).</p>
+
+                        <!-- Step Pathway Box -->
+                        <div class="bg-white p-2.5 rounded-lg border border-emerald-200 font-sans text-[11px] space-y-1">
+                            <div>1. Hormone passes membrane → Binds Intracellular Receptor</div>
+                            <div>2. <strong>Hormone-Receptor Complex</strong> interacts with <strong>Genome</strong></div>
+                            <div>3. Regulates <strong>Gene Expression / Chromosome Function</strong></div>
+                            <div>4. Transcription/Translation → Proteins → Physiological effects (tissue growth/differentiation).</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL REVISION & QUICK EXAM FLASHCARDS -->
+        <section class="bio-card p-5 border-t-4 border-t-amber-500 bg-gradient-to-b from-white to-amber-50/30">
+            <div class="flex items-center justify-between mb-4 border-b border-slate-200 pb-2">
+                <div class="flex items-center space-x-3">
+                    <span class="bg-amber-600 text-white font-extrabold text-sm px-3 py-1 rounded-lg">🔄</span>
+                    <h2 class="text-lg font-bold text-slate-900">FINAL REVISION — HIGH-YIELD EXAM SUMMARY</h2>
+                </div>
+                <span class="text-xs bg-amber-200 text-amber-900 font-bold px-3 py-1 rounded-full">Quick Revision</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-xs">
+                
+                <div class="bg-white p-3 rounded-xl border border-amber-200 shadow-sm">
+                    <strong class="text-amber-900 block mb-1 border-b border-amber-100 pb-1"><i class="fa-solid fa-star text-amber-500 mr-1"></i> Emergency / 3F Hormones</strong>
+                    <p class="text-slate-700 text-[11px]">Adrenaline & Noradrenaline (Catecholamines) from Adrenal Medulla respond to stress/emergencies by increasing heart rate, respiration, glycogenolysis, pupil dilation.</p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl border border-amber-200 shadow-sm">
+                    <strong class="text-amber-900 block mb-1 border-b border-amber-100 pb-1"><i class="fa-solid fa-star text-amber-500 mr-1"></i> Antagonistic Pairs</strong>
+                    <p class="text-slate-700 text-[11px]">
+                        1. <strong>Insulin</strong> (Hypoglycemic) vs <strong>Glucagon</strong> (Hyperglycemic).<br>
+                        2. <strong>PTH</strong> (Hypercalcemic) vs <strong>TCT</strong> (Hypocalcemic).
+                    </p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl border border-amber-200 shadow-sm">
+                    <strong class="text-amber-900 block mb-1 border-b border-amber-100 pb-1"><i class="fa-solid fa-star text-amber-500 mr-1"></i> Key Clinical Disorders</strong>
+                    <p class="text-slate-700 text-[11px]">
+                        • <strong>Acromegaly:</strong> Excess GH in adults.<br>
+                        • <strong>Cretinism:</strong> Hypothyroidism during pregnancy.<br>
+                        • <strong>Diabetes Insipidus:</strong> ADH deficiency.<br>
+                        • <strong>Addison's Disease:</strong> Adrenal Cortex hyposecretion.
+                    </p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl border border-amber-200 shadow-sm">
+                    <strong class="text-amber-900 block mb-1 border-b border-amber-100 pb-1"><i class="fa-solid fa-star text-amber-500 mr-1"></i> Diurnal Rhythm Regulator</strong>
+                    <p class="text-slate-700 text-[11px]"><strong>Melatonin</strong> from Pineal gland controls 24-hr diurnal rhythm, sleep-wake cycles, body temperature, metabolism, and immunity.</p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl border border-amber-200 shadow-sm">
+                    <strong class="text-amber-900 block mb-1 border-b border-amber-100 pb-1"><i class="fa-solid fa-star text-amber-500 mr-1"></i> Immune System Gland</strong>
+                    <p class="text-slate-700 text-[11px]"><strong>Thymus</strong> secretes Thymosins for T-lymphocyte differentiation (Cell-mediated) and antibody production (Humoral). Degenerates in old age.</p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl border border-amber-200 shadow-sm">
+                    <strong class="text-amber-900 block mb-1 border-b border-amber-100 pb-1"><i class="fa-solid fa-star text-amber-500 mr-1"></i> Second Messengers</strong>
+                    <p class="text-slate-700 text-[11px]">Generated by protein/peptide hormones binding to cell surface receptors: <strong>Cyclic AMP (cAMP), IP<sub>3</sub>, and Ca<sup>2+</sup></strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL REVISION & QUICK EXAM FLASHCARDS -->
+        <section class="bio-card p-5 border-t-4 border-t-amber-500 bg-gradient-to-b from-white to-amber-50/30">
+            <div class="flex items-center justify-between mb-4 border-b border-slate-200 pb-2">
+                <div class="flex items-center space-x-3">
+                    <span class="bg-amber-600 text-white font-extrabold text-sm px-3 py-1 rounded-lg">🔄</span>
+                    <h2 class="text-lg font-bold text-slate-900">FINAL REVISION — HIGH-YIELD EXAM SUMMARY</h2>
+                </div>
+                <span class="text-xs bg-amber-200 text-amber-900 font-bold px-3 py-1 rounded-full">Quick Revision</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-xs">
+                
+                <div class="bg-white p-3 rounded-xl border border-amber-200 shadow-sm">
+                    <strong class="text-amber-900 block mb-1 border-b border-amber-100 pb-1"><i class="fa-solid fa-star text-amber-500 mr-1"></i> Emergency / 3F Hormones</strong>
+                    <p class="text-slate-700 text-[11px]">Adrenaline & Noradrenaline (Catecholamines) from Adrenal Medulla respond to stress/emergencies by increasing heart rate, respiration, glycogenolysis, pupil dilation.</p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl border border-amber-200 shadow-sm">
+                    <strong class="text-amber-900 block mb-1 border-b border-amber-100 pb-1"><i class="fa-solid fa-star text-amber-500 mr-1"></i> Antagonistic Pairs</strong>
+                    <p class="text-slate-700 text-[11px]">
+                        1. <strong>Insulin</strong> (Hypoglycemic) vs <strong>Glucagon</strong> (Hyperglycemic).<br>
+                        2. <strong>PTH</strong> (Hypercalcemic) vs <strong>TCT</strong> (Hypocalcemic).
+                    </p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl border border-amber-200 shadow-sm">
+                    <strong class="text-amber-900 block mb-1 border-b border-amber-100 pb-1"><i class="fa-solid fa-star text-amber-500 mr-1"></i> Key Clinical Disorders</strong>
+                    <p class="text-slate-700 text-[11px]">
+                        • <strong>Acromegaly:</strong> Excess GH in adults.<br>
+                        • <strong>Cretinism:</strong> Hypothyroidism during pregnancy.<br>
+                        • <strong>Diabetes Insipidus:</strong> ADH deficiency.<br>
+                        • <strong>Addison's Disease:</strong> Adrenal Cortex hyposecretion.
+                    </p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl border border-amber-200 shadow-sm">
+                    <strong class="text-amber-900 block mb-1 border-b border-amber-100 pb-1"><i class="fa-solid fa-star text-amber-500 mr-1"></i> Diurnal Rhythm Regulator</strong>
+                    <p class="text-slate-700 text-[11px]"><strong>Melatonin</strong> from Pineal gland controls 24-hr diurnal rhythm, sleep-wake cycles, body temperature, metabolism, and immunity.</p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl border border-amber-200 shadow-sm">
+                    <strong class="text-amber-900 block mb-1 border-b border-amber-100 pb-1"><i class="fa-solid fa-star text-amber-500 mr-1"></i> Immune System Gland</strong>
+                    <p class="text-slate-700 text-[11px]"><strong>Thymus</strong> secretes Thymosins for T-lymphocyte differentiation (Cell-mediated) and antibody production (Humoral). Degenerates in old age.</p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl border border-amber-200 shadow-sm">
+                    <strong class="text-amber-900 block mb-1 border-b border-amber-100 pb-1"><i class="fa-solid fa-star text-amber-500 mr-1"></i> Second Messengers</strong>
+                    <p class="text-slate-700 text-[11px]">Generated by protein/peptide hormones binding to cell surface receptors: <strong>Cyclic AMP (cAMP), $IP_3$, and $Ca^{2+}$</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="text-center text-xs text-slate-500 py-4 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div>
+                <strong>NCERT Biology Class 11</strong> — Chapter 19 Complete Study Document
+            </div>
+            <div class="text-[11px]">
+                Preserved Terms & Definitions • 3-Color Educational Design • Printable A4 Landscape Layout
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
